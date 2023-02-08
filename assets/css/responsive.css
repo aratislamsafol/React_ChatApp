@@ -1,0 +1,134 @@
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-tabs {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #c7c7c7;
+      border-top: none;
+      width: 6%;
+    }
+  
+    .wrapper {
+      height: 100% !important;
+      width: 100%;
+      margin-left: 6%;
+    }
+  
+    .tab-content {
+      height: 100vh;
+      width: 30%;
+      float: left;
+    }
+  
+    .chats .tab-content {
+      width: 100%;
+    }
+  
+    .tab-content ul {
+      list-style: none;
+    }
+  
+    .tab-content ul li {
+      padding: 10px 0px;
+    }
+  
+    .chats {
+      height: 100vh;
+      width: 70% !important;
+      float: left;
+      /* background-color: rgb(190, 185, 185); */
+      display: block;
+      border-left: 1px solid #c7c7c7;
+    }
+  
+    .homeMobile {
+      display: none;
+    }
+  
+    .homeDesktop {
+      display: block;
+    }
+  
+    .chats {
+      overflow: scroll;
+    }
+    .offcanvas-body{
+      overflow-y:scroll !important;
+      margin-bottom:20%;
+    }
+  }
+  
+  
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .nav-tabs {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #c7c7c7;
+      border-top: none;
+      width: 6%;
+    }
+  
+    .wrapper {
+      height: 100% !important;
+      width: 100%;
+      float: left;
+      margin-left: 6%;
+    }
+  
+    .tab-content {
+      height: 100vh;
+      width: 30%;
+      float: left;
+    }
+  
+    .chats .tab-content {
+      width: 100%;
+    }
+  
+    .tab-content ul {
+      list-style: none;
+    }
+  
+    .tab-content ul li {
+      padding: 10px 0px;
+    }
+  
+    .chats {
+      height: 100vh;
+      width: 70% !important;
+      float: left;
+      display: block;
+      border-left: 1px solid #c7c7c7;
+    }
+  
+    .homeMobile {
+      display: none;
+    }
+  
+    .homeDesktop {
+      display: block;
+    }
+
+    .offcanvas-body{
+      overflow-y:scroll !important;
+      margin-bottom:20%;
+    }
+  }
