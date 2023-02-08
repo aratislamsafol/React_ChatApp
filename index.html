@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Document</title>
 </head>
@@ -35,7 +36,152 @@
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
           tabindex="0">
-          <ul class="homeMobile">
+          <!-- For Mobile -->
+          <!-- Create Structured First-->
+          <div class="row">
+              <div class="col-12">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-12 mt-3 my-5">
+                              <h3>My Profile</h3>
+                          </div>
+                      </div>
+                      <div class="row mb-5 ">
+                          <div class="col-12 mt-3">
+                              <div class="userPhoto">
+                                  <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="img-fluid userImage" alt="">
+                                  <div class="userInfo mt-2">
+                                      <h6>Farhana Rahman</h6>
+                                      <p class="text-center">Active</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- profile -->
+          <div class="row my-4 py-4">
+              <div class="col-12">
+                  <div class="container">
+                      <!-- Accordion Create -->
+                      <div class="accordion">
+                          <!-- Accordion Items -->
+                          <div class="accrodion-item">
+                              <button aria-expanded="false" class="accrodion_btn">
+                                  <span class="icon" aria-hidden="true"></span>
+                                  <span class="accrodion-title "><i class="fa-regular fa-user"></i> &nbsp; About</span>
+                              </button>
+
+                              <div class="accrodion-content">
+                                  <div class="d-flex flex-column">
+                                      <div>
+                                          <h6>Name</h6>
+                                          <p>Farhana Rahman</p>
+                                      </div>
+
+                                      <div>
+                                          <h6>Email</h6>
+                                          <p>farhanarahman@gmail.com</p>
+                                      </div>
+
+                                      <div>
+                                          <h6>Time</h6>
+                                          <p>4:14 AM</p>
+                                      </div>
+
+                                      <div>
+                                          <h6>Location</h6>
+                                          <p>Dhaka, Bangladesh</p>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!-- Accordion Items -->
+                          <div class="accrodion-item" class="">
+                              <button aria-expanded="false" class="accrodion_btn">
+                                  <span aria-hidden="true" class="icon"></span>
+                                  <span class="accrodion-title"><i class="fa-solid fa-paperclip"></i> &nbsp; Attached Files</span>
+                              </button>
+
+                              <div class="accrodion-content ">
+                                  <div class="d-flex justify-content-between">
+                                      <div class="d-flex">
+                                          <div class="fileIcon">
+                                              <i class="fa-sharp fa-solid fa-note-sticky"></i>
+                                          </div>
+                                          <div class="d-flex flex-column attachedFile">
+                                              <h6>Admin-A.zip</h6>
+                                              <span>12.5 MB</span>
+                                          </div>
+                                      </div>
+                                      <div class="d-flex">
+                                          <i class="fa-solid fa-download"></i>
+                                          <div class="dropdow">
+                                              <button onclick="myFunction()" class="dropbtn">...</button>
+                                              <div id="myDropdown" class="dropdown-content">
+                                                <a href="#">Restore</a>
+                                                <a href="#">Delete</a>
+                                                
+                                              </div>
+                                            </div>
+                                      </div>
+                                  </div>
+                                  <div class="d-flex justify-content-between my-4">
+                                      <div class="d-flex">
+                                          <div class="fileIcon">
+                                              <i class="fa-sharp fa-solid fa-note-sticky"></i>
+                                          </div>
+                                          <div class="d-flex flex-column attachedFile">
+                                              <h6>Admin-A.zip</h6>
+                                              <span>12.5 MB</span>
+                                          </div>
+                                      </div>
+                                      <div class="d-flex">
+                                          <i class="fa-solid fa-download"></i>
+                                          <div class="dropdow">
+                                              <button onclick="myFunction()" class="dropbtn">...</button>
+                                              <div id="myDropdown" class="dropdown-content">
+                                                <a href="#">Restore</a>
+                                                <a href="#">Delete</a>
+                                                
+                                              </div>
+                                            </div>
+                                      </div>
+                                  </div>
+                                  <div class="d-flex justify-content-between my-4">
+                                      <div class="d-flex">
+                                          <div class="fileIcon">
+                                              <i class="fa-sharp fa-solid fa-note-sticky"></i>
+                                          </div>
+                                          <div class="d-flex flex-column attachedFile">
+                                              <h6>Admin-A.zip</h6>
+                                              <span>12.5 MB</span>
+                                          </div>
+                                      </div>
+                                      <div class="d-flex">
+                                          <i class="fa-solid fa-download"></i>
+                                          <div class="dropdow">
+                                              <button onclick="myFunction()" class="dropbtn">...</button>
+                                              <div id="myDropdown" class="dropdown-content">
+                                                <a href="#">Restore</a>
+                                                <a href="#">Delete</a>
+                                              </div>
+                                            </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> 
+                                                                        
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Mobile End -->
+          <!-- For Chat -->
+          <!-- <ul class="homeMobile">
             <li><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button></li>
 
@@ -47,7 +193,9 @@
 
             <li><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button></li>
-          </ul>
+          </ul> -->
+
+          <!-- For Chat Ended -->
 
           <!-- For Desktop View -->
           <div class="homeDesktop">
@@ -114,6 +262,7 @@
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
   <script src="script/bootstrap/bootstrap.js"></script>
+  <script src="script/main.js"></script>
 </body>
 
 </html>

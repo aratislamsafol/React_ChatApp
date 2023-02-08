@@ -6,18 +6,46 @@
 .nav-tabs {
   position: fixed;
   bottom: 0;
-  border-top: 1px solid red;
+  border-top: 1px solid gray;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: white;
+  z-index: 1;
 }
 
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  border-color: none !important ;
+}
+.nav-link{
+  padding: 0px ;
+}
+.nav-link button:hover{
+  border:none;
+  outline: none;
+}
 .chats {
   display: none;
 }
 
 .homeDesktop {
   display: none;
+}
+
+.wrapper {
+  height: 100% !important;
+  width: 100%;
+  /* margin-left: 10%; */
+  /* overflow: hidden; */
+}
+.wrapper .row{
+  margin:0;
+  padding:0;
+}
+.tab-content {
+  height: 100vh;
+  width: 100%;
+  float: left;
 }
 
 /* .homeDesktop button{
@@ -27,7 +55,9 @@
 @media (max-width: 575.98px) {}
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -37,7 +67,7 @@
     top: 0;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid red;
+    border-right: 1px solid rgb(145, 140, 140);
     border-top: none;
     width: 10%;
   }
@@ -203,3 +233,172 @@
     display: block;
   }
 }
+
+/* Design Chat Application After Create Model */
+/* Profile Page */
+.userPhoto{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 140px;
+  color:var(--fontAccrodion);
+}
+.userInfo h6{
+  font-size: 20px;
+}
+.userInfo{
+  font-size: 18px;
+}
+.userImage{
+  border:1px solid rgb(236, 231, 231);
+  padding:4px;
+  border-radius: 100%;
+  height: 90%;
+}
+
+/* Accrodion */
+.accrodion-item{
+  padding:10px 20px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid rgb(241 232 232);
+}
+.accrodion-item button{
+  outline: none;
+  border: none;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background: none;
+}
+.accrodion-title{
+  font-size: 18px;
+  font-weight: 600;
+  color:var(--fontAccrodion);
+}
+.accrodion-item .icon{
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  right: 0;
+  border-radius: 23px;
+  top: 2px;
+  background-color: rgb(180, 178, 178);
+}
+.accrodion-item .icon::before{
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  top:11px;
+  background-color: rgb(255, 255, 255);
+  left:6px;
+  content: '';
+}
+.accrodion-item .icon::after{
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 12px;
+  background-color: rgb(255, 255, 255);
+  top:6px;
+  left:11px;
+}
+.accrodion-item button[aria-expanded="true"]{
+  border-bottom: 1px solid rgb(161, 155, 155);
+  padding-bottom: 10px;
+}
+.accrodion-item button[aria-expanded="true"] .icon::after{
+  width: 0;
+}
+.accrodion-content{
+  margin-top: 10px;
+  opacity: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: opacity 100ms linear , max-height 100ms linear;
+  z-index: -1;
+}
+.accrodion-content h6{
+  color:var(--fontAccrodion);
+  margin-top: 7px;
+}
+.accrodion-content p{
+  /* margin-top: 10px; */
+  font-size: 1rem;
+  font-weight: 600;
+  font-size: 18px;
+  color:var(--accordionContentItemColor);
+}
+.accrodion-item button[aria-expanded="true"]+.accrodion-content{
+  opacity: 1;
+  max-height: 300px;
+  transition: all 200ms linear;
+}
+
+/* File Icon */
+.fileIcon{
+  background-color: rgb(218, 225, 245);
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-right: 10px;
+  color:rgb(63, 63, 218);
+  font-size: 24px;
+}
+.attachedFile span{
+  font-weight: 600;
+  color:var(--fontAccrodion);
+  letter-spacing: 1px;
+}
+/* DropDown Button */
+.fa-download{ 
+  margin-top:6px;
+}
+
+.dropbtn {
+  margin-left: 6px;
+  padding: 6px 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top:-6px;
+}
+/* .dropbtn active{
+  background-color: #e2e2e2;
+} */
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #e2e2e2;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  right:19%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover{
+  background-color: #e2e2e2;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
