@@ -1,371 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
-  <!-- FontAwsome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="assets/css/owlCarousel/owl.carousel.min.css">
-  <!-- Style, Responsive -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owlCarousel/owl.carousel.min.css">
+    <!-- Style, Responsive -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Document</title>
 </head>
 
 <body>
-  <div class="d-flex">
-    <ul class="nav nav-tabs border-top p-3 p-lg-0" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
-          role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-regular fa-user"></i></button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#chat-tab-pane" type="button"
-          role="tab" aria-controls="chat-tab-pane" aria-selected="false"><i class="fa-brands fa-rocketchat"></i></button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
-          role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-user-group"></i></button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
-          role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i class="fa-solid fa-address-book"></i></button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting-tab-pane" type="button"
-          role="tab" aria-controls="setting-tab-pane" aria-selected="false"><i class="fa-solid fa-gears"></i></button> 
-      </li>
-      <!-- Logout -->
-      <li>
-        <button><i class="fa-solid fa-right-from-bracket"></i></button>
-      </li>
-    </ul><!-- nav-tabs -->
+    <div class="d-flex">
+        <ul class="nav nav-tabs border-top p-3 p-lg-0" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                        class="fa-regular fa-user"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#chat-tab-pane"
+                    type="button" role="tab" aria-controls="chat-tab-pane" aria-selected="false"><i
+                        class="fa-brands fa-rocketchat"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                        class="fa-solid fa-user-group"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i
+                        class="fa-solid fa-address-book"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting-tab-pane"
+                    type="button" role="tab" aria-controls="setting-tab-pane" aria-selected="false"><i
+                        class="fa-solid fa-gears"></i></button>
+            </li>
+            <!-- Logout -->
+            <li>
+                <button><i class="fa-solid fa-right-from-bracket"></i></button>
+            </li>
+        </ul><!-- nav-tabs -->
 
-    <div class="wrapper">
-      <div class="tab-content" id="myTabContent">
-        <!-- Profile -->
-        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-          tabindex="0">
-          <!-- For User Profile -->
-          <!-- Create Structured First-->
-          <div class="row">
-              <div class="col-12">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-12 mt-3 my-5">
-                              <h3>My Profile</h3>
-                          </div>
-                      </div>
-                      <div class="row mb-5 ">
-                          <div class="col-12 mt-3">
-                              <div class="userPhoto">
-                                  <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="img-fluid userImage" alt="">
-                                  <div class="userInfo mt-2">
-                                      <h6>Farhana Rahman</h6>
-                                      <p class="text-center">Active</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- profile -->
-          <div class="row my-4 py-4">
-              <div class="col-12">
-                  <div class="container">
-                      <!-- Accordion Create -->
-                      <div class="accordion">
-                          <!-- Accordion Items -->
-                          <div class="accrodion-item">
-                              <button aria-expanded="false" class="accrodion_btn">
-                                  <span class="icon" aria-hidden="true"></span>
-                                  <span class="accrodion-title "><i class="fa-regular fa-user"></i> &nbsp; About</span>
-                              </button>
-
-                              <div class="accrodion-content">
-                                  <div class="d-flex flex-column">
-                                      <div>
-                                          <h6>Name</h6>
-                                          <p>Farhana Rahman</p>
-                                      </div>
-
-                                      <div>
-                                          <h6>Email</h6>
-                                          <p>farhanarahman@gmail.com</p>
-                                      </div>
-
-                                      <div>
-                                          <h6>Time</h6>
-                                          <p>4:14 AM</p>
-                                      </div>
-
-                                      <div>
-                                          <h6>Location</h6>
-                                          <p>Dhaka, Bangladesh</p>
-                                      </div>
-                                      
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!-- Accordion Items -->
-                          <div class="accrodion-item" class="">
-                              <button aria-expanded="false" class="accrodion_btn">
-                                  <span aria-hidden="true" class="icon"></span>
-                                  <span class="accrodion-title"><i class="fa-solid fa-paperclip"></i> &nbsp; Attached Files</span>
-                              </button>
-
-                              <div class="accrodion-content ">
-                                  <div class="d-flex justify-content-between">
-                                      <div class="d-flex">
-                                          <div class="fileIcon">
-                                              <i class="fa-sharp fa-solid fa-note-sticky"></i>
-                                          </div>
-                                          <div class="d-flex flex-column attachedFile">
-                                              <h6>Admin-A.zip</h6>
-                                              <span>12.5 MB</span>
-                                          </div>
-                                      </div>
-                                      <div class="d-flex">
-                                          <i class="fa-solid fa-download"></i>
-                                          <div class="dropdow">
-                                              <button onclick="myFunction()" class="dropbtn">...</button>
-                                              <div id="myDropdown" class="dropdown-content">
-                                                <a href="#">Restore</a>
-                                                <a href="#">Delete</a>
-                                                
-                                              </div>
+        <div class="wrapper">
+            <div class="tab-content" id="myTabContent">
+                <!-- Profile -->
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <!-- For User Profile -->
+                    <!-- Create Structured First-->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 mt-3 my-5">
+                                        <h3>My Profile</h3>
+                                    </div>
+                                </div>
+                                <div class="row mb-5 ">
+                                    <div class="col-12 mt-3">
+                                        <div class="userPhoto">
+                                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg"
+                                                class="img-fluid userImage" alt="">
+                                            <div class="userInfo mt-2">
+                                                <h6>Farhana Rahman</h6>
+                                                <p class="text-center">Active</p>
                                             </div>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex justify-content-between my-4">
-                                      <div class="d-flex">
-                                          <div class="fileIcon">
-                                              <i class="fa-sharp fa-solid fa-note-sticky"></i>
-                                          </div>
-                                          <div class="d-flex flex-column attachedFile">
-                                              <h6>Admin-A.zip</h6>
-                                              <span>12.5 MB</span>
-                                          </div>
-                                      </div>
-                                      <div class="d-flex">
-                                          <i class="fa-solid fa-download"></i>
-                                          <div class="dropdow">
-                                              <button onclick="myFunction()" class="dropbtn">...</button>
-                                              <div id="myDropdown" class="dropdown-content">
-                                                <a href="#">Restore</a>
-                                                <a href="#">Delete</a>
-                                                
-                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- profile -->
+                    <div class="row my-4 py-4">
+                        <div class="col-12">
+                            <div class="container">
+                                <!-- Accordion Create -->
+                                <div class="accordion">
+                                    <!-- Accordion Items -->
+                                    <div class="accrodion-item">
+                                        <button aria-expanded="false" class="accrodion_btn">
+                                            <span class="icon" aria-hidden="true"></span>
+                                            <span class="accrodion-title "><i class="fa-regular fa-user"></i> &nbsp;
+                                                About</span>
+                                        </button>
+
+                                        <div class="accrodion-content">
+                                            <div class="d-flex flex-column">
+                                                <div>
+                                                    <h6>Name</h6>
+                                                    <p>Farhana Rahman</p>
+                                                </div>
+
+                                                <div>
+                                                    <h6>Email</h6>
+                                                    <p>farhanarahman@gmail.com</p>
+                                                </div>
+
+                                                <div>
+                                                    <h6>Time</h6>
+                                                    <p>4:14 AM</p>
+                                                </div>
+
+                                                <div>
+                                                    <h6>Location</h6>
+                                                    <p>Dhaka, Bangladesh</p>
+                                                </div>
+
                                             </div>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex justify-content-between my-4">
-                                      <div class="d-flex">
-                                          <div class="fileIcon">
-                                              <i class="fa-sharp fa-solid fa-note-sticky"></i>
-                                          </div>
-                                          <div class="d-flex flex-column attachedFile">
-                                              <h6>Admin-A.zip</h6>
-                                              <span>12.5 MB</span>
-                                          </div>
-                                      </div>
-                                      <div class="d-flex">
-                                          <i class="fa-solid fa-download"></i>
-                                          <div class="dropdow">
-                                              <button onclick="myFunction()" class="dropbtn">...</button>
-                                              <div id="myDropdown" class="dropdown-content">
-                                                <a href="#">Restore</a>
-                                                <a href="#">Delete</a>
-                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Accordion Items -->
+                                    <div class="accrodion-item" class="">
+                                        <button aria-expanded="false" class="accrodion_btn">
+                                            <span aria-hidden="true" class="icon"></span>
+                                            <span class="accrodion-title"><i class="fa-solid fa-paperclip"></i> &nbsp;
+                                                Attached Files</span>
+                                        </button>
+
+                                        <div class="accrodion-content ">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex">
+                                                    <div class="fileIcon">
+                                                        <i class="fa-sharp fa-solid fa-note-sticky"></i>
+                                                    </div>
+                                                    <div class="d-flex flex-column attachedFile">
+                                                        <h6>Admin-A.zip</h6>
+                                                        <span>12.5 MB</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <i class="fa-solid fa-download"></i>
+                                                    <div class="dropdow">
+                                                        <button onclick="myFunction()" class="dropbtn">...</button>
+                                                        <div id="myDropdown" class="dropdown-content">
+                                                            <a href="#">Restore</a>
+                                                            <a href="#">Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div> 
-                                                                        
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Mobile End -->
-        </div>
-        <!-- test -->
-        <div class="tab-pane fade" id="chat-tab-pane" role="tabpanel" aria-labelledby="test-tab" tabindex="0">
-          <div class="row">
-            <div class="col-12">
-              <div class="chated">
-                  <h2 class="mb-4">Chats</h2>
-                  <!-- serach -->
-                  <div class="d-flex border chatSearch">
-                    <i class="fa-solid fa-magnifying-glass chatSearchIcon"></i>
-                    <input type="text" placeholder="Search message or users">
-                  </div>
-                  <!-- Active Person -->
-                  <div class="owl-carousel">
-                    <div class="chatCarouselContent">
-                        <div class="userActiveShow">
-                            <img src="assets/images/avatar-6.dc44eabff29dbd9780cb.jpg" class="userActiveImg" alt="">
-                            <img src="assets/images/active-removebg-preview.png" class="activeIcon" alt="">
-                            <p>Limon</p>
+                                            <div class="d-flex justify-content-between my-4">
+                                                <div class="d-flex">
+                                                    <div class="fileIcon">
+                                                        <i class="fa-sharp fa-solid fa-note-sticky"></i>
+                                                    </div>
+                                                    <div class="d-flex flex-column attachedFile">
+                                                        <h6>Admin-A.zip</h6>
+                                                        <span>12.5 MB</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <i class="fa-solid fa-download"></i>
+                                                    <div class="dropdow">
+                                                        <button onclick="myFunction()" class="dropbtn">...</button>
+                                                        <div id="myDropdown" class="dropdown-content">
+                                                            <a href="#">Restore</a>
+                                                            <a href="#">Delete</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between my-4">
+                                                <div class="d-flex">
+                                                    <div class="fileIcon">
+                                                        <i class="fa-sharp fa-solid fa-note-sticky"></i>
+                                                    </div>
+                                                    <div class="d-flex flex-column attachedFile">
+                                                        <h6>Admin-A.zip</h6>
+                                                        <span>12.5 MB</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <i class="fa-solid fa-download"></i>
+                                                    <div class="dropdow">
+                                                        <button onclick="myFunction()" class="dropbtn">...</button>
+                                                        <div id="myDropdown" class="dropdown-content">
+                                                            <a href="#">Restore</a>
+                                                            <a href="#">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="chatCarouselContent">
-                        <div class="userActiveShow">
-                            <img src="assets/images/avatar-4.b23e41d9c09997efbc21.jpg" class="userActiveImg" alt="">
-                            <img src="assets/images/active-removebg-preview.png" class="activeIcon" alt="">
-                            <p>Farhana</p>
-                        </div>
-                    </div>
-
-                    <div class="chatCarouselContent">
-                        <div class="userActiveShow">
-                            <img src="assets/images/avatar-3.2cfd5ba6f0dee8d1d076.jpg" class="userActiveImg" alt="">
-                            <img src="assets/images/active-removebg-preview.png" class="activeIcon" alt="">
-                            <p>Sujon</p>
-                        </div>
-                    </div>
-
-                    <div class="chatCarouselContent">
-                        <div class="userActiveShow">
-                            <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="userActiveImg" alt="">
-                            <img src="assets/images/active-removebg-preview.png" class="activeIcon" alt="">
-                            <p>Tushar</p>
-                        </div>
-                    </div>
-
-                    <div class="chatCarouselContent">
-                        <div class="userActiveShow">
-                            <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="userActiveImg" alt="">
-                            <img src="assets/images/active-removebg-preview.png" class="activeIcon" alt="">
-                            <p>Kamrul</p>
-                        </div>
-                    </div>
-
-                    <div class="chatCarouselContent">
-                        <div class="userActiveShow">
-                            <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="userActiveImg" alt="">
-                            <img src="assets/images/active-removebg-preview.png" class="activeIcon" alt="">
-                            <p>Kamrul</p>
-                        </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <!-- For Chat -->
-          <div class="homeMobile mx-3">
-            <h4>Recent</h4>
-              <div class="chattingPerson">
-                <div class="chatItem" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                  <div class="d-flex gap-2">
-                      <div class="chatItemContent">
-                          <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                          
-                          <div class="activeIconChatItem">
-                              <img src="assets/images/active-removebg-preview.png" alt="" />
-                          </div>
-                      </div>
-
-                      <!-- chat Item Text -->
-                      <div class="d-flex flex-column">
-                          <div class="chatItemName">
-                              <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
-                              <p class="">okay sure</p>
-                          </div>
-                      </div>
-
-                  </div>
-
-                  <div class="lastTextTime">
-                      02:55
-                  </div>
+                    <!-- Mobile End -->
                 </div>
+                <!-- test -->
+                <div class="tab-pane fade" id="chat-tab-pane" role="tabpanel" aria-labelledby="test-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="chated">
+                                <h2 class="mb-4">Chats</h2>
+                                <!-- serach -->
+                                <div class="d-flex border chatSearch">
+                                    <i class="fa-solid fa-magnifying-glass chatSearchIcon"></i>
+                                    <input type="text" placeholder="Search message or users">
+                                </div>
+                                <!-- Active Person -->
+                                <div class="owl-carousel">
+                                    <div class="chatCarouselContent">
+                                        <div class="userActiveShow">
+                                            <img src="assets/images/avatar-6.dc44eabff29dbd9780cb.jpg"
+                                                class="userActiveImg" alt="">
+                                            <img src="assets/images/active-removebg-preview.png" class="activeIcon"
+                                                alt="">
+                                            <p>Limon</p>
+                                        </div>
+                                    </div>
+                                    <div class="chatCarouselContent">
+                                        <div class="userActiveShow">
+                                            <img src="assets/images/avatar-4.b23e41d9c09997efbc21.jpg"
+                                                class="userActiveImg" alt="">
+                                            <img src="assets/images/active-removebg-preview.png" class="activeIcon"
+                                                alt="">
+                                            <p>Farhana</p>
+                                        </div>
+                                    </div>
 
-                <div class="chatItem" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                  <div class="d-flex gap-2">
-                      <div class="chatItemContent">
-                          <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                          
-                          <div class="activeIconChatItem">
-                              <img src="assets/images/active-removebg-preview.png" alt="" />
-                          </div>
-                      </div>
+                                    <div class="chatCarouselContent">
+                                        <div class="userActiveShow">
+                                            <img src="assets/images/avatar-3.2cfd5ba6f0dee8d1d076.jpg"
+                                                class="userActiveImg" alt="">
+                                            <img src="assets/images/active-removebg-preview.png" class="activeIcon"
+                                                alt="">
+                                            <p>Sujon</p>
+                                        </div>
+                                    </div>
 
-                      <!-- chat Item Text -->
-                      <div class="d-flex flex-column">
-                          <div class="chatItemName">
-                              <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
-                              <p class="">okay sure</p>
-                          </div>
-                      </div>
+                                    <div class="chatCarouselContent">
+                                        <div class="userActiveShow">
+                                            <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg"
+                                                class="userActiveImg" alt="">
+                                            <img src="assets/images/active-removebg-preview.png" class="activeIcon"
+                                                alt="">
+                                            <p>Tushar</p>
+                                        </div>
+                                    </div>
 
-                  </div>
+                                    <div class="chatCarouselContent">
+                                        <div class="userActiveShow">
+                                            <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg"
+                                                class="userActiveImg" alt="">
+                                            <img src="assets/images/active-removebg-preview.png" class="activeIcon"
+                                                alt="">
+                                            <p>Kamrul</p>
+                                        </div>
+                                    </div>
 
-                  <div class="lastTextTime">
-                      02:55
-                  </div>
-                </div>
-              </div>
+                                    <div class="chatCarouselContent">
+                                        <div class="userActiveShow">
+                                            <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg"
+                                                class="userActiveImg" alt="">
+                                            <img src="assets/images/active-removebg-preview.png" class="activeIcon"
+                                                alt="">
+                                            <p>Kamrul</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- For Chat -->
+                    <div class="homeMobile mx-3">
+                        <h4>Recent</h4>
+                        <div class="chattingPerson">
+                            <div class="chatItem" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <div class="d-flex gap-2">
+                                    <div class="chatItemContent">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
 
-              <div class="chattingPerson">
-                <div class="chatItem" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                  <div class="d-flex gap-2">
-                      <div class="chatItemContent">
-                          <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                          
-                          <div class="activeIconChatItem">
-                              <img src="assets/images/active-removebg-preview.png" alt="" />
-                          </div>
-                      </div>
+                                        <div class="activeIconChatItem">
+                                            <img src="assets/images/active-removebg-preview.png" alt="" />
+                                        </div>
+                                    </div>
 
-                      <!-- chat Item Text -->
-                      <div class="d-flex flex-column">
-                          <div class="chatItemName">
-                              <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
-                              <p class="">okay sure</p>
-                          </div>
-                      </div>
+                                    <!-- chat Item Text -->
+                                    <div class="d-flex flex-column">
+                                        <div class="chatItemName">
+                                            <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
+                                            <p class="">okay sure</p>
+                                        </div>
+                                    </div>
 
-                  </div>
+                                </div>
 
-                  <div class="lastTextTime">
-                      02:55
-                  </div>
-                </div>
+                                <div class="lastTextTime">
+                                    02:55
+                                </div>
+                            </div>
 
-                <div class="chatItem" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                  <div class="d-flex gap-2">
-                      <div class="chatItemContent">
-                          <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                          
-                          <div class="activeIconChatItem">
-                              <img src="assets/images/active-removebg-preview.png" alt="" />
-                          </div>
-                      </div>
+                            <div class="chatItem" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <div class="d-flex gap-2">
+                                    <div class="chatItemContent">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
 
-                      <!-- chat Item Text -->
-                      <div class="d-flex flex-column">
-                          <div class="chatItemName">
-                              <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
-                              <p class="">okay sure</p>
-                          </div>
-                      </div>
+                                        <div class="activeIconChatItem">
+                                            <img src="assets/images/active-removebg-preview.png" alt="" />
+                                        </div>
+                                    </div>
 
-                  </div>
+                                    <!-- chat Item Text -->
+                                    <div class="d-flex flex-column">
+                                        <div class="chatItemName">
+                                            <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
+                                            <p class="">okay sure</p>
+                                        </div>
+                                    </div>
 
-                  <div class="lastTextTime">
-                      02:55
-                  </div>
-                </div>
-              </div>
+                                </div>
 
-            <!-- <li><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                <div class="lastTextTime">
+                                    02:55
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chattingPerson">
+                            <div class="chatItem" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <div class="d-flex gap-2">
+                                    <div class="chatItemContent">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+
+                                        <div class="activeIconChatItem">
+                                            <img src="assets/images/active-removebg-preview.png" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <!-- chat Item Text -->
+                                    <div class="d-flex flex-column">
+                                        <div class="chatItemName">
+                                            <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
+                                            <p class="">okay sure</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="lastTextTime">
+                                    02:55
+                                </div>
+                            </div>
+
+                            <div class="chatItem" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <div class="d-flex gap-2">
+                                    <div class="chatItemContent">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+
+                                        <div class="activeIconChatItem">
+                                            <img src="assets/images/active-removebg-preview.png" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <!-- chat Item Text -->
+                                    <div class="d-flex flex-column">
+                                        <div class="chatItemName">
+                                            <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
+                                            <p class="">okay sure</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="lastTextTime">
+                                    02:55
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <li><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle r2</button></li>
 
             <li><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
@@ -373,1121 +398,1233 @@
 
             <li><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button></li> -->
-          </div>
-          <!-- For Chat Ended -->
-
-          <!-- For Desktop View -->
-          <div class="homeDesktop">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <div class="container" >
-                  <h5 class="my-4">Recent</h4>
-                  <div class="nav-link active chatItemDesktop" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-                  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h6>Nahid Hasan</h6>
-                          <p>okay sure</p>
-                        </div>
-                      </div>
-                      <p>2:35 AM</p>
                     </div>
-                  </div>
+                    <!-- For Chat Ended -->
 
-                  <div class="nav-link chatItemDesktop" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                  type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h6>Nahid Hasan</h6>
-                          <p>okay sure</p>
-                        </div>
-                      </div>
-                      <p>2:35 AM</p>
-                    </div>
-                  </div>
-
-                  <div class="nav-link chatItemDesktop" id="v-pills-home2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home2"
-                  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h6>Nahid Hasan</h6>
-                          <p>okay sure</p>
-                        </div>
-                      </div>
-                      <p>2:35 AM</p>
-                    </div>
-                  </div>
-                  <div class="nav-link chatItemDesktop" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-                  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h6>Nahid Hasan</h6>
-                          <p>okay sure</p>
-                        </div>
-                      </div>
-                      <p>2:35 AM</p>
-                    </div>
-                  </div>
-
-                  <div class="nav-link chatItemDesktop" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                  type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h6>Nahid Hasan</h6>
-                          <p>okay sure</p>
-                        </div>
-                      </div>
-                      <p>2:35 AM</p>
-                    </div>
-                  </div>
-
-                  <div class="nav-link chatItemDesktop" id="v-pills-home2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home2"
-                  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h6>Nahid Hasan</h6>
-                          <p>okay sure</p>
-                        </div>
-                      </div>
-                      <p>2:35 AM</p>
-                    </div>
-                  </div>
-
-                  <div class="nav-link chatItemDesktop" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-                  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h6>Nahid Hasan</h6>
-                          <p>okay sure</p>
-                        </div>
-                      </div>
-                      <p>2:35 AM</p>
-                    </div>
-                  </div>
-
-                  <div class="nav-link chatItemDesktop" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                  type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h6>Nahid Hasan</h6>
-                          <p>okay sure</p>
-                        </div>
-                      </div>
-                      <p>2:35 AM</p>
-                    </div>
-                  </div>
-
-                  <div class="nav-link chatItemDesktop" id="v-pills-home2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home2"
-                  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h6>Nahid Hasan</h6>
-                          <p>okay sure</p>
-                        </div>
-                      </div>
-                      <p>2:35 AM</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Group -->
-        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-          <!-- Header -->
-          <div class="row mt-4">
-            <div class="col-12">
-                <div class="container">
-                    <div class="d-flex justify-content-between">
-                        <h3>Groups</h3>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="Groups_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="fa-solid fa-user"></i>
-                        </button>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Group</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form method="" enctype="">
-                                            <div class="mb-3 d-flex flex-column
-                                            ">
-                                            <label for="" class="form-label">Group Name</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                            
-                                            <div class="accordion mt-3" id="accordionExample">
-                                                <div class="accordion-item" style="border:none">
-                                                    <!-- <label for="">Group Members</label> -->
-                                                    <button style="border:none" class="p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        Group Members
-                                                    </button>
-                                                    
-                                                    <div id="collapseOne" class="mt-4 accordion-collapse collapse border" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body" >
-                                                        <strong>Contacts</strong>
-                                                        <div class="mt-2">
-                                                            <p>A</p>
-                                                            <ul>
-                                                                <li><div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">Albert</label>
-                                                                </div></li>
-
-                                                                <li><div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">Askay Kumar</label>
-                                                                </div></li>
-
-                                                                <li><div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">Aratrika</label>
-                                                                </div></li>
-
-                                                                <li><div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">Apple</label>
-                                                                </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="mt-2">
-                                                            <p>B</p>
-                                                            <ul>
-                                                                <li><div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">Badol Khanna</label>
-                                                                </div></li>
-
-                                                                <li><div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">Boony</label>
-                                                                </div></li>
-
-                                                                <li><div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">Boobu</label>
-                                                                </div></li>
-
-                                                            </ul>
-                                                        </div>
-                                                        <div class="mt-2">
-                                                            <p>C</p>
-                                                            <ul>
-                                                                <li>
-                                                                    <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">Cawmin</label>
-                                                                </div>
-                                                                </li>
-
-                                                                <li>
-                                                                    <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">Choimokldsjf dsadf</label>
-                                                                </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                    </div>
+                    <!-- For Desktop View -->
+                    <div class="homeDesktop">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <div class="container">
+                                <h5 class="my-4">Recent</h4>
+                                    <div class="nav-link active chatItemDesktop" id="v-pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Nahid Hasan</h6>
+                                                    <p>okay sure</p>
                                                 </div>
                                             </div>
-
-                                            <!-- Description -->
-                                            <div class="mt-3">
-                                                <label for="" class="form-label">Description</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            </div>
-                                            </div>
-                                        </form>
+                                            <p>2:35 AM</p>
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Create Group</button>
+
+                                    <div class="nav-link chatItemDesktop" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Nahid Hasan</h6>
+                                                    <p>okay sure</p>
+                                                </div>
+                                            </div>
+                                            <p>2:35 AM</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="nav-link chatItemDesktop" id="v-pills-home2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home2" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Nahid Hasan</h6>
+                                                    <p>okay sure</p>
+                                                </div>
+                                            </div>
+                                            <p>2:35 AM</p>
+                                        </div>
+                                    </div>
+                                    <div class="nav-link chatItemDesktop" id="v-pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Nahid Hasan</h6>
+                                                    <p>okay sure</p>
+                                                </div>
+                                            </div>
+                                            <p>2:35 AM</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="nav-link chatItemDesktop" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Nahid Hasan</h6>
+                                                    <p>okay sure</p>
+                                                </div>
+                                            </div>
+                                            <p>2:35 AM</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="nav-link chatItemDesktop" id="v-pills-home2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home2" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Nahid Hasan</h6>
+                                                    <p>okay sure</p>
+                                                </div>
+                                            </div>
+                                            <p>2:35 AM</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="nav-link chatItemDesktop" id="v-pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Nahid Hasan</h6>
+                                                    <p>okay sure</p>
+                                                </div>
+                                            </div>
+                                            <p>2:35 AM</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="nav-link chatItemDesktop" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Nahid Hasan</h6>
+                                                    <p>okay sure</p>
+                                                </div>
+                                            </div>
+                                            <p>2:35 AM</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="nav-link chatItemDesktop" id="v-pills-home2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home2" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Nahid Hasan</h6>
+                                                    <p>okay sure</p>
+                                                </div>
+                                            </div>
+                                            <p>2:35 AM</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group -->
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <!-- Header -->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="container">
+                                <div class="d-flex justify-content-between">
+                                    <h3>Groups</h3>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="Groups_btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-user"></i>
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Group
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form method="" enctype="">
+                                                        <div class="mb-3 d-flex flex-column
+                                            ">
+                                                            <label for="" class="form-label">Group Name</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                                            <div class="accordion mt-3" id="accordionExample">
+                                                                <div class="accordion-item" style="border:none">
+                                                                    <!-- <label for="">Group Members</label> -->
+                                                                    <button style="border:none" class="p-2"
+                                                                        type="button" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseOne"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapseOne">
+                                                                        Group Members
+                                                                    </button>
+
+                                                                    <div id="collapseOne"
+                                                                        class="mt-4 accordion-collapse collapse border"
+                                                                        aria-labelledby="headingOne"
+                                                                        data-bs-parent="#accordionExample">
+                                                                        <div class="accordion-body">
+                                                                            <strong>Contacts</strong>
+                                                                            <div class="mt-2">
+                                                                                <p>A</p>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Albert</label>
+                                                                                        </div>
+                                                                                    </li>
+
+                                                                                    <li>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Askay
+                                                                                                Kumar</label>
+                                                                                        </div>
+                                                                                    </li>
+
+                                                                                    <li>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Aratrika</label>
+                                                                                        </div>
+                                                                                    </li>
+
+                                                                                    <li>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Apple</label>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="mt-2">
+                                                                                <p>B</p>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Badol
+                                                                                                Khanna</label>
+                                                                                        </div>
+                                                                                    </li>
+
+                                                                                    <li>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Boony</label>
+                                                                                        </div>
+                                                                                    </li>
+
+                                                                                    <li>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Boobu</label>
+                                                                                        </div>
+                                                                                    </li>
+
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="mt-2">
+                                                                                <p>C</p>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Cawmin</label>
+                                                                                        </div>
+                                                                                    </li>
+
+                                                                                    <li>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Choimokldsjf
+                                                                                                dsadf</label>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Description -->
+                                                            <div class="mt-3">
+                                                                <label for="" class="form-label">Description</label>
+                                                                <textarea class="form-control"
+                                                                    id="exampleFormControlTextarea1"
+                                                                    rows="3"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Create Group</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Search -->
+                    <div class="row my-4">
+                        <div class="col-12">
+                            <div class="container">
+                                <!-- serach -->
+                                <div class="d-flex border chatSearch">
+                                    <i class="fa-solid fa-magnifying-glass chatSearchIcon"></i>
+                                    <input type="text" placeholder="Search message or users">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- All contact -->
+                    <div class="group_contact my-4">
+                        <div class="container">
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <!-- <div class="mt-2 unReadMsg">
+                    <span>23+</span>
+                </div> -->
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <!-- <div class="mt-2 unReadMsg">
+                    <span>23+</span>
+                </div> -->
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between groupcontactSibling">
+                                <div class="d-flex">
+                                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
+                                    <p class="ms-2 mt-2">#General</p>
+                                </div>
+
+                                <div class="mt-2 unReadMsg">
+                                    <span>23+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Contacts -->
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+                    <!-- Header -->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="container">
+                                <div class="d-flex justify-content-between">
+                                    <h3>Contacts</h3>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="Groups_btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Group
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form method="" enctype="">
+                                                        <div class="mb-3 d-flex flex-column
+                                              ">
+                                                            <label for="" class="form-label">Email</label>
+                                                            <input type="email" placeholder="Enter Email"
+                                                                class="form-control" id="exampleInputEmail1"
+                                                                aria-describedby="emailHelp">
+
+                                                            <!-- Invaitation Message -->
+                                                            <div class="mt-3">
+                                                                <label for="" class="form-label">Invaitation
+                                                                    Message</label>
+                                                                <textarea class="form-control"
+                                                                    id="exampleFormControlTextarea1"
+                                                                    rows="3"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Create Group</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Search -->
+                    <div class="row my-4">
+                        <div class="col-12">
+                            <div class="container">
+                                <!-- serach -->
+                                <div class="d-flex border chatSearch">
+                                    <i class="fa-solid fa-magnifying-glass chatSearchIcon"></i>
+                                    <input type="text" placeholder="Search message or users">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- All contact -->
+                    <div class="allContact my-4">
+                        <div class="container">
+                            <div class="">
+                                <h5>A</h5>
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Albert Rodarte</p>
+                                    </div>
+
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Albert Rodarte</p>
+                                    </div>
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5>B</h5>
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Badsha Faisal</p>
+                                    </div>
+
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Bappy Mariya</p>
+                                    </div>
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5>C</h5>
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Chana Chowdhury</p>
+                                    </div>
+
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Chach Moshai</p>
+                                    </div>
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5>D</h5>
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Doggy !</p>
+                                    </div>
+
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Dramistic's</p>
+                                    </div>
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5>E</h5>
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Elov Tenoe</p>
+                                    </div>
+
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Elison Taylor</p>
+                                    </div>
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="mt-2">
+                                <h5>L</h5>
+                                <div class="d-flex justify-content-between allContactItem mt-0">
+                                    <div class="">
+                                        <p>Lemon</p>
+                                    </div>
+
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Lucky Khan</p>
+                                    </div>
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between allContactItem mt-3">
+                                    <div>
+                                        <p>Lebu Miah</p>
+                                    </div>
+
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings -->
+                <div class="tab-pane fade" id="setting-tab-pane" role="tabpanel" aria-labelledby="setting-tab"
+                    tabindex="0">
+                    <!-- Create Structured First-->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 mt-3 my-5">
+                                        <h3>Settings</h3>
+                                    </div>
+                                </div>
+                                <div class="row mb-5 ">
+                                    <div class="col-12 mt-3">
+                                        <div class="userPhoto">
+                                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg"
+                                                class="img-fluid userImage" alt="">
+                                            <div class="userInfo mt-2">
+                                                <h6>Farhana Rahman</h6>
+                                                <div class="dropdown d-flex justify-content-center">
+
+                                                    <select class="dropdown-button text-center dropdown-content">
+                                                        <option value="option1" class="drpdwn_content">Available
+                                                        </option>
+                                                        <option value="option2" class="drpdwn_content">Busy</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Details Security -->
+                    <div class="row my-4 py-4">
+                        <div class="col-12">
+                            <div class="container">
+                                <!-- Accordion Create -->
+                                <div class="accordion">
+                                    <!-- Accordion Items -->
+                                    <div class="accrodion-item">
+                                        <button aria-expanded="false" class="accrodion_btn">
+                                            <span class="icon" aria-hidden="true"></span>
+                                            <span class="accrodion-title ">Personal Information</span>
+                                        </button>
+
+                                        <div class="accrodion-content">
+                                            <div class=" d-flex flex-column">
+                                                <div>
+                                                    <h6>Name</h6>
+                                                    <p>Farhana Rahman</p>
+                                                </div>
+
+                                                <div>
+                                                    <h6>Email</h6>
+                                                    <p>farhanarahman@gmail.com</p>
+                                                </div>
+
+                                                <div>
+                                                    <h6>Time</h6>
+                                                    <p>4:14 AM</p>
+                                                </div>
+
+                                                <div>
+                                                    <h6>Location</h6>
+                                                    <p>Dhaka, Bangladesh</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Accordion Items -->
+                                    <div class="accrodion-item">
+                                        <button aria-expanded="false" class="accrodion_btn">
+                                            <span aria-hidden="true" class="icon"></span>
+                                            <span class="accrodion-title">Privacy</span>
+                                        </button>
+
+                                        <div class="accrodion-content ">
+                                            <div class="d-flex flex-column gap-4">
+                                                <div class="py-2 d-flex flex-row justify-content-between border-bottom">
+                                                    <h6 class>Profile Photo</h6>
+                                                    <div class="dropdown d-flex justify-content-center">
+                                                        <select class="dropdown-button text-center dropdown-content">
+                                                            <option value="option1" class="drpdwn_content">Everyone
+                                                            </option>
+                                                            <option value="option2" class="drpdwn_content">Selected
+                                                            </option>
+                                                            <option value="option3" class="drpdwn_content">Nobody
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="py-2 d-flex flex-row justify-content-between border-bottom">
+                                                    <h6>Last Seen</h6>
+                                                    <!-- Default checked -->
+                                                    <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="py-2 d-flex flex-row justify-content-between border-bottom">
+                                                    <h6>Status</h6>
+                                                    <div class="dropdown d-flex justify-content-center">
+                                                        <select class="dropdown-button text-center dropdown-content">
+                                                            <option value="option1" class="drpdwn_content">Everyone
+                                                            </option>
+                                                            <option value="option2" class="drpdwn_content">Selected
+                                                            </option>
+                                                            <option value="option3" class="drpdwn_content">Nobody
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="py-2 d-flex flex-row justify-content-between border-bottom">
+                                                    <h6>Read receipts</h6>
+                                                    <!-- Default checked -->
+                                                    <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="pt-2 d-flex flex-row justify-content-between border-bottom">
+                                                    <h3>Groups</h3>
+                                                    <div class="dropdown d-flex justify-content-center">
+                                                        <select class="dropdown-button text-center dropdown-content">
+                                                            <option value="option1" class="drpdwn_content">Everyone
+                                                            </option>
+                                                            <option value="option2" class="drpdwn_content">Selected
+                                                            </option>
+                                                            <option value="option3" class="drpdwn_content">Nobody
+                                                            </option>
+                                                        </select>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accrodion-item" class="">
+                                        <button aria-expanded="false" class="accrodion_btn">
+                                            <span aria-hidden="true" class="icon"></span>
+                                            <span class="accrodion-title">Security</span>
+                                        </button>
+
+                                        <div class="accrodion-content ">
+                                            <div class="py-2 d-flex flex-row justify-content-between border-bottom">
+                                                <h6>Show security notification</h6>
+                                                <!-- Default checked -->
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accrodion-item mb-5" class="">
+                                        <button aria-expanded="false" class="accrodion_btn">
+                                            <span aria-hidden="true" class="icon"></span>
+                                            <span class="accrodion-title">Help</span>
+                                        </button>
+
+                                        <div class="accrodion-content">
+                                            <p><a href="">FAQs</a></p>
+                                            <p><a href="">Contact</a></p>
+                                            <p><a href="">Terms & Privacy policy</a></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
-        <!-- Search -->
-        <div class="row my-4">
-            <div class="col-12">
-              <div class="container">
-                <!-- serach -->
-                <div class="d-flex border chatSearch">
-                  <i class="fa-solid fa-magnifying-glass chatSearchIcon"></i>
-                  <input type="text" placeholder="Search message or users">
-              </div>
-              </div>
-            </div>
-        </div>
-
-        <!-- All contact -->
-        <div class="group_contact my-4">
-            <div class="container">
-              <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <!-- <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div> -->
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <!-- <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div> -->
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between groupcontactSibling">
-                <div class="d-flex">
-                    <h3 class="d-flex justify-content-center align-self-center">G</h3>
-                    <p class="ms-2 mt-2">#General</p>
-                </div>
-
-                <div class="mt-2 unReadMsg">
-                    <span>23+</span>
-                </div>
-            </div>
-            </div>
-            
-        </div>
-        </div>
-        <!-- Contacts -->
-        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-            <!-- Header -->
-            <div class="row mt-4">
-              <div class="col-12">
-                  <div class="container">
-                      <div class="d-flex justify-content-between">
-                          <h3>Contacts</h3>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="Groups_btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                              <i class="fa-solid fa-user-plus"></i>
-                          </button>
-                          
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                  <div class="modal-content">
-                                      <div class="modal-header">
-                                          <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Group</h1>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                          <form method="" enctype="">
-                                              <div class="mb-3 d-flex flex-column
-                                              ">
-                                              <label for="" class="form-label">Email</label>
-                                              <input type="email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-                                              <!-- Invaitation Message -->
-                                              <div class="mt-3">
-                                                  <label for="" class="form-label">Invaitation Message</label>
-                                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                              </div>
-                                              </div>
-                                          </form>
-                                      </div>
-                                      <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Create Group</button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Search -->
-          <div class="row my-4">
-              <div class="col-12">
-                  <div class="container">
-                    <!-- serach -->
-                    <div class="d-flex border chatSearch">
-                      <i class="fa-solid fa-magnifying-glass chatSearchIcon"></i>
-                      <input type="text" placeholder="Search message or users">
-                  </div>
-                  </div>
-              
-              </div>
-          </div>
-          <!-- All contact -->
-          <div class="allContact my-4">
-              <div class="container">
-                <div class="">
-                  <h5>A</h5>
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Albert Rodarte</p>
-                      </div>
-
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Albert Rodarte</p>
-                      </div>
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-              </div>
-
-              <div>
-                  <h5>B</h5>
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Badsha Faisal</p>
-                      </div>
-
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Bappy Mariya</p>
-                      </div>
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-              </div>
-
-              <div>
-                  <h5>C</h5>
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Chana Chowdhury</p>
-                      </div>
-
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Chach Moshai</p>
-                      </div>
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-              </div>
-
-              <div>
-                  <h5>D</h5>
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Doggy !</p>
-                      </div>
-
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Dramistic's</p>
-                      </div>
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-              </div>
-
-              <div>
-                  <h5>E</h5>
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Elov Tenoe</p>
-                      </div>
-
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Elison Taylor</p>
-                      </div>
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-              </div>
-
-              <div class="mt-2">
-                  <h5>L</h5>
-                  <div class="d-flex justify-content-between allContactItem mt-0">
-                      <div class="">
-                          <p>Lemon</p>
-                      </div>
-
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Lucky Khan</p>
-                      </div>
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-
-                  <div class="d-flex justify-content-between allContactItem mt-3">
-                      <div>
-                          <p>Lebu Miah</p>
-                      </div>
-
-                      <span><i class="fa-solid fa-bars"></i></span>
-                  </div>
-              </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- Settings -->
-        <div class="tab-pane fade" id="setting-tab-pane" role="tabpanel" aria-labelledby="setting-tab" tabindex="0">
-            <!-- Create Structured First-->
-          <div class="row">
-              <div class="col-12">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-12 mt-3 my-5">
-                              <h3>Settings</h3>
-                          </div>
-                      </div>
-                      <div class="row mb-5 ">
-                          <div class="col-12 mt-3">
-                              <div class="userPhoto">
-                                  <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="img-fluid userImage" alt="">
-                                  <div class="userInfo mt-2">
-                                      <h6>Farhana Rahman</h6>
-                                      <div class="dropdown d-flex justify-content-center">
-                                          
-                                          <select class="dropdown-button text-center dropdown-content">
-                                          <option value="option1" class="drpdwn_content">Available</option>
-                                          <option value="option2" class="drpdwn_content">Busy</option>
-                                          </select>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Details Security -->
-          <div class="row my-4 py-4">
-              <div class="col-12">
-                  <div class="container">
-                      <!-- Accordion Create -->
-                      <div class="accordion">
-                          <!-- Accordion Items -->
-                          <div class="accrodion-item">
-                              <button aria-expanded="false" class="accrodion_btn">
-                                  <span class="icon" aria-hidden="true"></span>
-                                  <span class="accrodion-title ">Personal Information</span>
-                              </button>
-
-                              <div class="accrodion-content">
-                                 <div class=" d-flex flex-column">
-                                      <div>
-                                          <h6>Name</h6>
-                                          <p>Farhana Rahman</p>
-                                      </div>
-
-                                      <div>
-                                          <h6>Email</h6>
-                                          <p>farhanarahman@gmail.com</p>
-                                      </div>
-
-                                      <div>
-                                          <h6>Time</h6>
-                                          <p>4:14 AM</p>
-                                      </div>
-
-                                      <div>
-                                          <h6>Location</h6>
-                                          <p>Dhaka, Bangladesh</p>
-                                      </div>
-                                      
-                                 </div>
-                              </div>
-                          </div>
-
-                          <!-- Accordion Items -->
-                          <div class="accrodion-item" >
-                              <button aria-expanded="false" class="accrodion_btn">
-                                  <span aria-hidden="true" class="icon"></span>
-                                  <span class="accrodion-title">Privacy</span>
-                              </button>
-
-                              <div class="accrodion-content ">
-                                  <div class="d-flex flex-column gap-4">
-                                      <div class="py-2 d-flex flex-row justify-content-between border-bottom">
-                                          <h6 class>Profile Photo</h6>
-                                          <div class="dropdown d-flex justify-content-center">
-                                              <select class="dropdown-button text-center dropdown-content">
-                                              <option value="option1" class="drpdwn_content">Everyone</option>
-                                              <option value="option2" class="drpdwn_content">Selected</option>
-                                              <option value="option3" class="drpdwn_content">Nobody</option>
-                                              </select>
-                                          </div>
-                                      </div>
-
-                                      <div class="py-2 d-flex flex-row justify-content-between border-bottom">
-                                          <h6>Last Seen</h6>
-                                          <!-- Default checked -->
-                                          <label class="switch">
-                                              <input type="checkbox" checked>
-                                              <span class="slider round"></span>
-                                          </label>
-                                      </div>
-
-                                      <div class="py-2 d-flex flex-row justify-content-between border-bottom">
-                                          <h6>Status</h6>
-                                          <div class="dropdown d-flex justify-content-center">
-                                              <select class="dropdown-button text-center dropdown-content">
-                                              <option value="option1" class="drpdwn_content">Everyone</option>
-                                              <option value="option2" class="drpdwn_content">Selected</option>
-                                              <option value="option3" class="drpdwn_content">Nobody</option>
-                                              </select>
-                                          </div>
-                                      </div>
-
-                                      <div class="py-2 d-flex flex-row justify-content-between border-bottom">
-                                          <h6>Read receipts</h6>
-                                          <!-- Default checked -->
-                                          <label class="switch">
-                                              <input type="checkbox" checked>
-                                              <span class="slider round"></span>
-                                          </label>
-                                      </div>
-
-                                      <div class="pt-2 d-flex flex-row justify-content-between border-bottom">
-                                          <h3>Groups</h3>
-                                          <div class="dropdown d-flex justify-content-center">
-                                              <select class="dropdown-button text-center dropdown-content">
-                                              <option value="option1" class="drpdwn_content">Everyone</option>
-                                              <option value="option2" class="drpdwn_content">Selected</option>
-                                              <option value="option3" class="drpdwn_content">Nobody</option>
-                                              </select>
-                                          </div>
-
-
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="accrodion-item" class="">
-                              <button aria-expanded="false" class="accrodion_btn">
-                                  <span aria-hidden="true" class="icon"></span>
-                                  <span class="accrodion-title">Security</span>
-                              </button>
-
-                              <div class="accrodion-content ">
-                                  <div class="py-2 d-flex flex-row justify-content-between border-bottom">
-                                      <h6>Show security notification</h6>
-                                      <!-- Default checked -->
-                                      <label class="switch">
-                                          <input type="checkbox" checked>
-                                          <span class="slider round"></span>
-                                      </label>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="accrodion-item mb-5" class="">
-                              <button aria-expanded="false" class="accrodion_btn">
-                                  <span aria-hidden="true" class="icon"></span>
-                                  <span class="accrodion-title">Help</span>
-                              </button>
-
-                              <div class="accrodion-content">
-                                  <p><a href="">FAQs</a></p>
-                                  <p><a href="">Contact</a></p>
-                                  <p><a href="">Terms & Privacy policy</a></p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- Chats Right for Desktop-->
-      <div class="chats">
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-              tabindex="0">
-                <div class="chatItemDesktopHeader border-bottom">
-                  <div class="container my-3">
-                    <div class="header d-flex justify-content-between">
-                      <!-- Left Side -->
-                      <div class="d-flex gap-2">
-                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" alt="">
-                        <div class="d-flex flex-column">
-                          <h5>Khan Kamrul Islam</h5>
-                          <p>online</p>
-                        </div>
-                      </div>
-                      <!-- Right Side -->
-                      <div class="d-flex gap-4 mt-2">
-                        <span><i class="fa-solid fa-magnifying-glass chatSearchIcon"></i></span>
-                        <span><i class="fa-solid fa-phone chatSearchIcon"></i></span>
-                        <span><i class="fa-solid fa-video chatSearchIcon"></i></span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-                <!-- Message Item Body -->
-                <div class="offcanvas-body">                                        
-                  <div class="row ">
-                      <div class="col-12">
-                          <div class="d-flex textPerson">
-                              <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                              <div class="chatType">
-                                  <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning</p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-12">
-                          <div class="d-flex textPerson">
-                              <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                              <!-- ChatType Me -->
-                              <div class="chatType">
-                                  <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning</p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-12">
-                          <div class="d-flex textPerson2">
-                              <div class="chatType2">
-                                  <p><span>Me - </span> Good Morning</p>
-                              </div>
-                              <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
-                          </div>
-                      </div>
-
-                      <div class="col-12">
-                          <div class="d-flex textPerson">
-                              <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                              <div class="chatType">
-                                  <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning</p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-12">
-                          <div class="d-flex textPerson2">
-                              <div class="chatType2">
-                                  <p><span>Me - </span> Good Morning</p>
-                              </div>
-                              <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
-                          </div>
-                      </div>
-
-                      <div class="col-12">
-                          <div class="d-flex textPerson2">
-                              <div class="chatType2">
-                                  <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="chatTypeImg" alt="">
-                              </div>
-                              <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
-                          </div>
-                      </div>
-
-                      <div class="col-12">
-                        <div class="d-flex textPerson">
-                            <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                            <div class="chatType">
-                                <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning</p>
+            <!-- Chats Right for Desktop-->
+            <div class="chats">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active position-relative" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <div class="chatItemDesktopHeader position-sticky top-0 start-0 w-100 bg-white">
+                            <div class="header d-flex justify-content-between p-3">
+                                <!-- Left Side -->
+                                <div class="d-flex gap-2">
+                                    <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" alt="">
+                                    <div class="d-flex flex-column">
+                                        <h5>Khan Kamrul Islam</h5>
+                                        <p>online</p>
+                                    </div>
+                                </div>
+                                <!-- Right Side -->
+                                <div class="d-flex gap-4 mt-2">
+                                    <span><i class="fa-solid fa-magnifying-glass chatSearchIcon"></i></span>
+                                    <span><i class="fa-solid fa-phone chatSearchIcon"></i></span>
+                                    <span><i class="fa-solid fa-video chatSearchIcon"></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <!-- Message Item Body -->
+                        <div class="offcanvas-body">
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <div class="d-flex textPerson">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                                        <div class="chatType">
+                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
+                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
+                                                Morning Good Morning Good Morning</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="col-12">
-                      <div class="d-flex textPerson">
-                          <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                          <div class="chatType">
-                              <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning</p>
-                          </div>
-                      </div>
+                                <div class="col-12">
+                                    <div class="d-flex textPerson">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                                        <!-- ChatType Me -->
+                                        <div class="chatType">
+                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
+                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
+                                                Morning Good Morning Good Morning</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-flex textPerson2">
+                                        <div class="chatType2">
+                                            <p><span>Me - </span> Good Morning</p>
+                                        </div>
+                                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-flex textPerson">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                                        <div class="chatType">
+                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
+                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
+                                                Morning Good Morning Good Morning</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-flex textPerson2">
+                                        <div class="chatType2">
+                                            <p><span>Me - </span> Good Morning</p>
+                                        </div>
+                                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-flex textPerson2">
+                                        <div class="chatType2">
+                                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg"
+                                                class="chatTypeImg" alt="">
+                                        </div>
+                                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-flex textPerson">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                                        <div class="chatType">
+                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
+                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
+                                                Morning Good Morning Good Morning</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-flex textPerson">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                                        <div class="chatType">
+                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
+                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
+                                                Morning Good Morning Good Morning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex textPerson2">
+                                        <div class="chatType2">
+                                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg"
+                                                class="chatTypeImg" alt="">
+                                        </div>
+                                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Message footer Item -->
+                        <!-- OffCanvas Footer -->
+                        <div class="position-sticky bottom-0 start-0 w-100 bg-white p-3 border-top border-secondary">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="item">
+                                    <i class="fa-solid fa-camera"></i>
+                                </div>
+                                <div class="item">
+                                    <i class="fa-solid fa-image"></i>
+                                </div>
+                                <div class="item">
+                                    <i class="fa-solid fa-microphone-slash"></i>
+                                </div>
+                                <form action="" class="messageBox" id="messageBox">
+                                    <div class="input">
+                                        <input class="" placeholder="Message " type="text" name="">
+                                        <div class="icon">
+                                            <i class="fa-regular fa-paper-plane"></i>
+                                        </div>
+                                    </div>
+
+                                </form>
+                                <div class="thumbnillCheers">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-12">
-                      <div class="d-flex textPerson2">
-                          <div class="chatType2">
-                              <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="chatTypeImg" alt="">
-                          </div>
-                          <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
-                      </div>
-                    </div>
-                  </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        Content2</div>
+                    <div class="tab-pane fade show" id="v-pills-home2" role="tabpanel"
+                        aria-labelledby="v-pills-home2-tab" tabindex="0">Content3</div>
+
+                    <div class="tab-pane fade show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+                        tabindex="0">Content1</div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        Content2</div>
+                    <div class="tab-pane fade show" id="v-pills-home2" role="tabpanel"
+                        aria-labelledby="v-pills-home2-tab" tabindex="0">Content3</div>
+
+                    <div class="tab-pane fade show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+                        tabindex="0">Content1</div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        Content2</div>
+                    <div class="tab-pane fade show" id="v-pills-home2" role="tabpanel"
+                        aria-labelledby="v-pills-home2-tab" tabindex="0">Content3</div>
                 </div>
-                <!-- Message footer Item -->
-                <!-- OffCanvas Footer -->
-                <div class="row m-0 p-0">
-                  <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12">
-                    <div class="container">
-                      <div class="d-flex justify-content-between">
-                          <div class="item">
-                              <i class="fa-solid fa-camera"></i>
-                          </div>
-                          <div class="item">
-                              <i class="fa-solid fa-image"></i>
-                          </div>
-                          <div class="item">
-                              <i class="fa-solid fa-microphone-slash"></i>
-                          </div>
-                          <form action="" class="messageBox" id="messageBox">
-                              <div class="input">
-                                  <input class="" placeholder="Message " type="text" name="">
-                                  <div class="icon">
+                <!-- </div> -->
+
+            </div><!-- /chats -->
+        </div><!-- wrapper -->
+    </div>
+
+    <!-- OffCanvas -->
+    <div class="d-block d-lg-none offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div class="d-flex">
+                <button type="button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-arrow-left"></i></button>
+                <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                <p>Kamrul</p>
+            </div>
+
+            <div class="d-flex">
+                <button type="button" class="searchOffCanvas"> <i class="fa-solid fa-magnifying-glass"></i></button>
+
+                <button class="action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    type="button"><i class="fa-solid fa-circle-info"></i></button>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas-body">
+            <div class="row my-5">
+                <div class="col-12">
+                    <div class="d-flex textPerson">
+                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                        <div class="chatType">
+                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
+                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
+                                Morning</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="d-flex textPerson">
+                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                        <!-- ChatType Me -->
+                        <div class="chatType">
+                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
+                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
+                                Morning</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="d-flex textPerson2">
+                        <div class="chatType2">
+                            <p><span>Me - </span> Good Morning</p>
+                        </div>
+                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="d-flex textPerson">
+                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                        <div class="chatType">
+                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
+                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
+                                Morning</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="d-flex textPerson2">
+                        <div class="chatType2">
+                            <p><span>Me - </span> Good Morning</p>
+                        </div>
+                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="d-flex textPerson2">
+                        <div class="chatType2">
+                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="chatTypeImg" alt="">
+                        </div>
+                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OffCanvas Footer -->
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 offcanvas-footer">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="item">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                        <form action="" class="messageBox" id="messageBox">
+                            <div class="input">
+                                <input class="" placeholder="Message " type="text" name="">
+                                <div class="icon">
                                     <i class="fa-regular fa-paper-plane"></i>
-                                  </div>
-                              </div>
-                              
-                          </form>
-                          
-                          <div class="thumbnillCheers">
-                              <i class="fa-solid fa-thumbs-up"></i>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-            </div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-              tabindex="0">
-              Content2</div>
-            <div class="tab-pane fade show" id="v-pills-home2" role="tabpanel" aria-labelledby="v-pills-home2-tab"
-              tabindex="0">Content3</div>
-  
-            <div class="tab-pane fade show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-              tabindex="0">Content1</div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-              tabindex="0">
-              Content2</div>
-            <div class="tab-pane fade show" id="v-pills-home2" role="tabpanel" aria-labelledby="v-pills-home2-tab"
-              tabindex="0">Content3</div>
-  
-            <div class="tab-pane fade show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-              tabindex="0">Content1</div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-              tabindex="0">
-              Content2</div>
-            <div class="tab-pane fade show" id="v-pills-home2" role="tabpanel" aria-labelledby="v-pills-home2-tab"
-              tabindex="0">Content3</div>
-          </div>
-        <!-- </div> -->
-        
-      </div><!-- /chats -->
-    </div><!-- wrapper -->
-  </div>
-
-  <!-- OffCanvas -->
-  <div class="d-block d-lg-none offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-    aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-      <div class="d-flex">
-          <button type="button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-arrow-left"></i></button>
-          <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
-          <p>Kamrul</p>
-      </div>
-  
-      <div class="d-flex">
-          <button type="button" class="searchOffCanvas"> <i class="fa-solid fa-magnifying-glass"></i></button>
-         
-          <button class="action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button"><i class="fa-solid fa-circle-info"></i></button>
-
-          <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-      </div>
-    </div>
-  
-    <div class="offcanvas-body">
-        <div class="row ">
-            <div class="col-12">
-                <div class="d-flex textPerson">
-                    <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                    <div class="chatType">
-                        <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="d-flex textPerson">
-                    <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                    <!-- ChatType Me -->
-                    <div class="chatType">
-                        <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="d-flex textPerson2">
-                    <div class="chatType2">
-                        <p><span>Me - </span> Good Morning</p>
-                    </div>
-                    <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="d-flex textPerson">
-                    <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                    <div class="chatType">
-                        <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="d-flex textPerson2">
-                    <div class="chatType2">
-                        <p><span>Me - </span> Good Morning</p>
-                    </div>
-                    <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="d-flex textPerson2">
-                    <div class="chatType2">
-                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="chatTypeImg" alt="">
-                    </div>
-                    <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- OffCanvas Footer -->
-    <div class="row m-0 p-0">
-        <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 offcanvas-footer">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div class="item">
-                        <i class="fa-solid fa-camera"></i>
-                    </div>
-                    <div class="item">
-                        <i class="fa-solid fa-image"></i>
-                    </div>
-                    <div class="item">
-                        <i class="fa-solid fa-microphone-slash"></i>
-                    </div>
-                    <form action="" class="messageBox" id="messageBox">
-                        <div class="input">
-                            <input class="" placeholder="Message " type="text" name="">
-                            <div class="icon">
-                              <i class="fa-regular fa-paper-plane"></i>
+                                </div>
                             </div>
+
+                        </form>
+
+                        <div class="thumbnillCheers">
+                            <i class="fa-solid fa-thumbs-up"></i>
                         </div>
-                        
-                    </form>
-                    
-                    <div class="thumbnillCheers">
-                        <i class="fa-solid fa-thumbs-up"></i>
                     </div>
                 </div>
+
             </div>
-            
         </div>
     </div>
-  </div>
 
-  <script src="script/jquery-3.6.3.js"></script>
-  <script src="script/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
+    <script src="script/jquery-3.6.3.js"></script>
+    <script src="script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
     <script src="/script/owl.carousel.js"></script>
-  <script src="script/bootstrap/bootstrap.js"></script>
+    <script src="script/bootstrap/bootstrap.js"></script>
 </body>
 
 </html>
