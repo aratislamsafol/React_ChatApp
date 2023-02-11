@@ -30,25 +30,25 @@ $(document).ready(function(){
             },
             
             600:{
-                items:5
+                items:4
             },
             780:{
-                items:5
+                items:4
             },
             1000:{
-                items:7
+                items:4
             }
         }
         })
 });
 
 // Message Box
-const msgBox=document.querySelector('#messageBox');
-const input =document.querySelector(".input input");
-const item =document.querySelector('.offcanvas-footer .container .item');
-input.addEventListener("click",function(){
-    msgBox.classList.toggle('active');
-});
+// const msgBox=document.querySelector('#messageBox');
+// const input =document.querySelector(".input input");
+// const item =document.querySelector('.offcanvas-footer .container .item');
+// input.addEventListener("click",function(){
+//     msgBox.classList.toggle('active');
+// });
 
 // Message Box for Desktop
 // const msgBox2=document.querySelector('#messageBox2');
@@ -78,6 +78,7 @@ function myFunction() {
     }
   }
 
+  
 
 // offCanvas Search 
-const search=document.querySelector('.offcanvas-header .searchOffCanvas');
+// const search=document.querySelector('.offcanvas-header .searchOffCanvas');

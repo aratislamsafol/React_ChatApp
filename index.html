@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="assets/css/owlCarousel/owl.carousel.min.css">
+    <!-- Emoji -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.css">
     <!-- Style, Responsive -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -23,7 +25,8 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
                     type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
-                        class="fa-regular fa-user"></i></button>
+                        class="fa-regular fa-user"></i>
+                </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#chat-tab-pane"
@@ -91,7 +94,7 @@
                                     <div class="accrodion-item">
                                         <button aria-expanded="false" class="accrodion_btn">
                                             <span class="icon" aria-hidden="true"></span>
-                                            <span class="accrodion-title "><i class="fa-regular fa-user"></i> &nbsp;
+                                            <span class="accrodion-title"><i class="fa-regular fa-user"></i> &nbsp;
                                                 About</span>
                                         </button>
 
@@ -611,15 +614,15 @@
                                                                                     </li>
 
                                                                                     <li>
-                                                                                        <div class="mb-3 form-check">
-                                                                                            <input type="checkbox"
-                                                                                                class="form-check-input"
-                                                                                                id="exampleCheck1">
-                                                                                            <label
-                                                                                                class="form-check-label"
-                                                                                                for="exampleCheck1">Askay
-                                                                                                Kumar</label>
-                                                                                        </div>
+                                                                                                                                    <div class="mb-3 form-check">
+                                                                                                                                        <input type="checkbox"
+                                                                                                                                            class="form-check-input"
+                                                                                                                                            id="exampleCheck1">
+                                                                                                                                        <label
+                                                                                                                                            class="form-check-label"
+                                                                                                                                            for="exampleCheck1">Askay
+                                                                                                                                            Kumar</label>
+                                                                                                                                    </div>
                                                                                     </li>
 
                                                                                     <li>
@@ -1322,7 +1325,7 @@
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active position-relative" id="v-pills-home" role="tabpanel"
                         aria-labelledby="v-pills-home-tab" tabindex="0">
-                        <div class="chatItemDesktopHeader position-sticky top-0 start-0 w-100 bg-white">
+                        <div class="chatItemDesktopHeader border-bottom position-sticky top-0 start-0 w-100 bg-white">
                             <div class="header d-flex justify-content-between p-3">
                                 <!-- Left Side -->
                                 <div class="d-flex gap-2">
@@ -1334,12 +1337,61 @@
                                 </div>
                                 <!-- Right Side -->
                                 <div class="d-flex gap-4 mt-2">
-                                    <span><i class="fa-solid fa-magnifying-glass chatSearchIcon"></i></span>
-                                    <span><i class="fa-solid fa-phone chatSearchIcon"></i></span>
-                                    <span><i class="fa-solid fa-video chatSearchIcon"></i></span>
+                                    <span class="searchBoxs" data-bs-toggle="modal" data-bs-target="#searchIcon"><i class="fa-solid fa-magnifying-glass chatSearchIcon"></i></span>
+                                    <!-- Phone Call Icon -->
+                                    <span data-bs-toggle="modal" data-bs-target="#phoneIcon"><i class="fa-solid fa-phone chatSearchIcon"></i></span>
+                                    <span data-bs-toggle="modal" data-bs-target="#videoIcon"><i class="fa-solid fa-video chatSearchIcon"></i></span>
                                 </div>
                             </div>
                         </div>
+                        <!-- Search Modal -->
+                        <div class="fade modal" id="searchIcon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body searchModal">
+                                        <input class="w-100 p-2" type="text" placeholder="Search please " >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Call Modal  -->
+                        <div class="fade modal" id="phoneIcon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body phoneModal">
+                                        <img src="assets/images/avatar-4.b23e41d9c09997efbc21.jpg" alt="">
+                                        <div class="phoneModalContent">
+                                            <h5>Khan Kamrul Islam</h5>
+                                            <p>Start Audio Call</p>
+                                        </div>
+                                        <div class="Icon">
+                                            <span class="close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></span>
+                                            <span class="call"><i class="fa-solid fa-phone-volume"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Call Modal close -->
+                         <!-- Video Call Modal  -->
+                         <div class="fade modal" id="videoIcon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body phoneModal">
+                                        <img src="assets/images/avatar-4.b23e41d9c09997efbc21.jpg" alt="">
+                                        <div class="phoneModalContent">
+                                            <h5>Khan Kamrul Islam</h5>
+                                            <p>Start Audio Call</p>
+                                        </div>
+                                        <div class="Icon">
+                                            <span class="close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></span>
+                                            <span class="call"><i class="fa-solid fa-video"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Video Modal close -->
                         <!-- Message Item Body -->
                         <div class="offcanvas-body">
                             <div class="row mb-4">
@@ -1439,29 +1491,32 @@
                         </div>
                         <!-- Message footer Item -->
                         <!-- OffCanvas Footer -->
-                        <div class="position-sticky bottom-0 start-0 w-100 bg-white p-3 border-top border-secondary">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="item">
-                                    <i class="fa-solid fa-camera"></i>
-                                </div>
-                                <div class="item">
-                                    <i class="fa-solid fa-image"></i>
-                                </div>
-                                <div class="item">
-                                    <i class="fa-solid fa-microphone-slash"></i>
-                                </div>
-                                <form action="" class="messageBox" id="messageBox">
-                                    <div class="input">
-                                        <input class="" placeholder="Message " type="text" name="">
-                                        <div class="icon">
-                                            <i class="fa-regular fa-paper-plane"></i>
-                                        </div>
+                        <div class="position-sticky bottom-0 start-0 w-100 bg-white p-3 border-top  destopFooter">
+                            <div class="">
+                                <form action="" mathod="" class=" d-flex justify-content-between align-items-center"  id="">
+                                    
+                                    <input type="text" id="iconInput" placeholder="Enter Messge" >
+                                    
+                                    <!-- <div class="item" >
+                                        <input type="text" placeholder="Enter Messge" id="iconInput">
+                                    </div> -->
+                                    <div class="item">
+                                        <i class="fa-solid fa-camera"></i>
                                     </div>
-
+                                    <div class="item">
+                                        <input type="file" id="actual-btn" hidden/>
+                                        <label for="actual-btn" class="imagePicBtn"><i class="fa-solid fa-paperclip"></i></label>
+                                       
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-solid fa-microphone-slash"></i>
+                                    </div>
+                                    <div class="item sendItemDesktop">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </div>
                                 </form>
-                                <div class="thumbnillCheers">
-                                    <i class="fa-solid fa-thumbs-up"></i>
-                                </div>
+                                <!--  -->
+                                
                             </div>
                         </div>
 
@@ -1586,34 +1641,21 @@
         </div>
         <!-- OffCanvas Footer -->
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 offcanvas-footer">
-                <div class="container">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="item">
-                            <i class="fa-solid fa-camera"></i>
-                        </div>
-                        <div class="item">
-                            <i class="fa-solid fa-image"></i>
-                        </div>
-                        <div class="item">
-                            <i class="fa-solid fa-microphone-slash"></i>
-                        </div>
-                        <form action="" class="messageBox" id="messageBox">
-                            <div class="input">
-                                <input class="" placeholder="Message " type="text" name="">
-                                <div class="icon">
-                                    <i class="fa-regular fa-paper-plane"></i>
-                                </div>
-                            </div>
-
-                        </form>
-
-                        <div class="thumbnillCheers">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                        </div>
+            <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 offcanvas-footer ">
+                <form action="" method="" enctype="" class="w-100 mx-auto d-flex justify-content-between">
+                    <div class="item">
+                        <i class="fa-solid fa-face-smile"></i>
                     </div>
-                </div>
+                    <div class="item">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>    
+                    <input type="text" class="form-control" id="iconInput" placeholder="message">                
+                </form>
 
+                
             </div>
         </div>
     </div>
@@ -1623,8 +1665,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.js"></script>
     <script src="/script/owl.carousel.js"></script>
     <script src="script/bootstrap/bootstrap.js"></script>
+    <script>
+        $("#iconInput").emojioneArea()
+    </script>
 </body>
 
 </html>

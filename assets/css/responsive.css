@@ -19,13 +19,20 @@
       flex-direction: column;
       border-right: 1px solid #c7c7c7;
       border-top: none;
-      width: 6%;
+      width: 5%;
     }
-  
+    .nav-tabs li button{
+      border: none;
+      outline: none;
+      margin: 25px 0px;
+      font-size: 22px;
+      color:#7269EF;
+    }
+    
     .wrapper {
       height: 100% !important;
       width: 100%;
-      margin-left: 6%;
+      margin-left: 5%;
     }
   
     .tab-content {
@@ -62,14 +69,7 @@
     .homeDesktop {
       display: block;
     }
-  
-    .chats {
-      overflow: scroll;
-    }
-    .offcanvas-body{
-      overflow-y:scroll !important;
-      margin-bottom:20%;
-    }
+
   }
   
   
@@ -83,19 +83,25 @@
       flex-direction: column;
       border-right: 1px solid #c7c7c7;
       border-top: none;
-      width: 6%;
+      width: 4%;
     }
-  
+    .nav-tabs li button{
+      border: none;
+      outline: none;
+      margin: 25px 0px;
+      font-size: 23px;
+      color:#7269EF;
+    }
     .wrapper {
       height: 100% !important;
       width: 100%;
       float: left;
-      margin-left: 6%;
+      margin-left: 4%;
     }
   
     .tab-content {
       height: 100vh;
-      width: 30%;
+      width: 26%;
       float: left;
     }
   
@@ -113,7 +119,7 @@
   
     .chats {
       height: 100vh;
-      width: 70% !important;
+      width: 74% !important;
       float: left;
       display: block;
       border-left: 1px solid #c7c7c7;
@@ -127,8 +133,13 @@
       display: block;
     }
 
-    .offcanvas-body{
-      overflow-y:scroll !important;
-      margin-bottom:20%;
+    /* width */
+    ::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #ffffff; 
     }
   }

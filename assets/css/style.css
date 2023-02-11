@@ -17,7 +17,9 @@
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  border-color: none !important;
+  /* border-color: none !important; */
+  border:none;
+  outline: none;
 }
 
 .nav-link {
@@ -49,6 +51,7 @@
   margin: 0;
   padding: 0;
 }
+
 
 .tab-content {
   height: 100vh;
@@ -144,7 +147,6 @@
 
 /* Off Canvas Body  */
 
-.offcanvas-body {}
 
 .searchPreviousText {
   background-color: red;
@@ -170,7 +172,7 @@
 .chatType {
   background-color: #7269EF;
   color: white;
-  padding: 10px;
+  padding: 0;
   border-radius: 8px;
   overflow: scroll !important;
   overflow: visible !important;
@@ -187,7 +189,7 @@
 .chatType2 {
   background-color: gray;
   color: rgb(255, 253, 253);
-  padding: 10px;
+  padding: 0px 10px;
   border-radius: 8px;
   overflow: scroll !important;
   overflow: visible !important;
@@ -204,52 +206,75 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 30px;
 }
-
-.messageBox,
-.messageBox2 {
-  border-radius: 25px;
-  background-color: rgb(219, 219, 219);
-  position: relative;
-  width: 40%;
-  transition: 0.4s;
-}
-
-.messageBox.active {
-  width: 72%;
-}
-
-.messageBox .input,
-.messageBox2 .input {
-  position: relative;
-  width: 100%;
-  height: 40px;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  margin-left: 20px;
-}
-
-.messageBox .input input,
-.messageBox2 .input input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 88%;
-  height: 100%;
-  border: none;
+.offcanvas-footer input{
   outline: none;
-  background-color: rgb(219, 219, 219);
+  border: none;
+  width:60% !important;
+  border:1px solid red;
 }
 
-.messageBox .input .icon,
-.messageBox2 .input .icon {
-  position: absolute;
-  right: 42px;
+/* Emoji */
+.emojionearea {
+  width: 75%;
+  padding: 20px;
+  background-color: #d8d8d8;
+  border-radius: 8px;
+}
+.emojionearea .emojionearea-button > div {
+  top: 3px;
+}
+.emojionearea.emojionearea-inline > .emojionearea-editor {
+  width: 92%;
+  font-size: 18px;
+}
+.emojionearea-editor{
+  padding: 33px;
+  width: 75%;
+}
+.emojionearea.focused {
+  border-color: #d8d8d8 !important;
+  /* outline: 0; */
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgba(184, 241, 255, 0.6);
+  /* box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%); */
+}
+.sendItemDesktop{
+  background-color: #7269EF;
+  font-size: 20px;
+  padding:10px 15px;
+  color:white;
+  border-radius: 8px;
   cursor: pointer;
 }
+
+.destopFooter .item{
+  color: #7269EF;
+}
+.destopFooter .focused{
+  border-color: none !important;
+}
+.destopFooter .sendItemDesktop{
+  color:rgb(238, 232, 232) !important;
+}
+.imagePicBtn{
+  color: #7269EF;
+  padding: 1px;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1px;
+}
+/* Emoji on Desktop */
+
+/* .emojionearea{
+  border:none;
+  left:-20px;
+  top:2px;
+}
+.emojionearea:hover{
+  color:#7269EF
+} */
 
 
 
@@ -474,10 +499,6 @@
   position: relative;
 }
 
-.input icon {
-  position: absolute;
-  color: red;
-}
 
 /* Carosel For Chats */
 .owl-carousel {
@@ -593,7 +614,7 @@
 
 /* Desktop Chat Item */
 .chatItemDesktopHeader {
-  border-bottom: 1px solid rgb(207, 198, 198) !important;
+  border-bottom: 1px solid rgb(238, 231, 231) !important;
 }
 
 .chatItemDesktopHeader .header {
@@ -609,8 +630,63 @@
   height: fit-content;
   border-radius: 50%;
 }
+.chatItemDesktopHeader .header span{
+  color:#4a4a4a;
+}
+.phoneModal,.searchModal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.phoneModal img{
+  border-radius: 50%;
+  width: 23%;
+  height: auto;
+}
+.phoneModalContent{
+  margin-top:15px;
+  text-align: center;
+}
+.phoneModal .Icon{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+
+.phoneModal .close i{
+  background-color: #CB3C5E !important;
+  padding: 16px;
+  border-radius: 53%;
+  font-size: 29px;
+  color: whitesmoke;
+
+}
+
+.phoneModal .call i{
+  background-color: #05B688 !important;
+  padding: 17px;
+  border-radius: 36px;
+  font-size: 25px;
+  color: whitesmoke;
+}
+.searchModal input{
+  border-radius: 6px;
+  border:none;
+  outline: none;
+  background-color: #e2e2e2;
+}
+/* #phoneIcon .modal-dialog{
+  margin: 60px;
+} */
 
 /* Group Content */
+.Groups_btn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 22px;
+}
 .group_contact h3 {
   border-radius: 21px;
   padding: 4px 10px;
