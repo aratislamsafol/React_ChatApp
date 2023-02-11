@@ -1591,16 +1591,25 @@
                     </div>
                 </div>
                 <!-- Search Modal Mobile complete -->
-                <button class="action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    type="button"><i class="fa-solid fa-circle-info"></i></button>
-
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                </div>
+                <!-- <div class="dropDown">
+                    <button class="action" onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-circle-info"></i></button>
+                    <div class="dropdown-content" id="drpBtnToggle">
+                        <a href="">View Profile</a>
+                        <a href="">Archive</a>
+                        <a href="">Muted</a>
+                        <a href="">Deleted</a>
+                    </div>
+                </div> -->
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class=""><i class="fa-solid fa-circle-info"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Laptops</a></li>
+                            <li><a href="#">Monitors</a></li>
+                            <li><a href="#">Printers</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -1751,6 +1760,20 @@
     <script src="script/bootstrap/bootstrap.js"></script>
     <script>
         $("#iconInput").emojioneArea()
+    </script>
+    <script>
+       $(document).ready(function(){
+        // Show hide popover
+        $(".dropdown").click(function(){
+            $(this).find(".dropdown-menu").slideToggle("fast");
+        });
+    });
+    $(document).on("click", function(event){
+        var $trigger = $(".dropdown");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".dropdown-menu").slideUp("fast");
+        }            
+    });
     </script>
 </body>
 
