@@ -78,7 +78,7 @@ function myFunction() {
     }
   }
 
-  
+
 
 // offCanvas Search 
 // const search=document.querySelector('.offcanvas-header .searchOffCanvas');
