@@ -63,7 +63,9 @@ ul li ul.dropdown-menu li {
   outline: none;
   color: #7269EF !important;
 }
-
+.nav-item button i{
+  font-size:18px
+}
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   /* border-color: none !important; */
@@ -114,7 +116,9 @@ ul li ul.dropdown-menu li {
   overflow-y: auto;
   overflow-x: hidden;
 }
-
+.homeMobile{
+  margin-bottom: 50px;
+}
 .homeMobile ul li {
   list-style: none;
 }
@@ -167,9 +171,18 @@ ul li ul.dropdown-menu li {
 }
 
 .offcanvas-header p {
-  margin-top: 8px;
-  font-size: 18px;
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: rgb(78, 75, 75);
+
+}
+
+.offcanvas-header span {
+  margin-top: -20px;
   font-weight: 500;
+  font-size: 12px;
   margin-left: 10px;
   color: rgb(78, 75, 75)
 }
@@ -191,12 +204,13 @@ ul li ul.dropdown-menu li {
 }
 
 .offcanvas-header i {
-  font-size: 22px;
+  font-size: 16px;
+  margin-right: 6px;
   color: rgb(126, 124, 124);
 }
 
 .offcanvas-header .fa-magnifying-glass {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /* Off Canvas Body  */
@@ -521,14 +535,14 @@ ul li ul.dropdown-menu li {
 
 .chatSearchIcon {
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 3px;
   cursor: pointer;
   color:rgb(54, 54, 54)
 }
 
 .chatSearch input {
-  font-size: 19px;
-  margin-left: 26px;
+  font-size: 14px;
+  margin-left: 12px;
   border: none !important;
   outline: none !important;
   width: 100%;
@@ -641,11 +655,13 @@ ul li ul.dropdown-menu li {
   border: 1px solid white;
   border-radius: 50%;
 }
-
+.chatItemName{
+  margin-top: 6px;
+}
 .chatItemName p,
 .lastTextTime {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 15px;
   color: rgb(126, 124, 124);
 }
 
