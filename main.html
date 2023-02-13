@@ -66,7 +66,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12 mt-3 my-5">
-                                        <h3>My Profile</h3>
+                                        <h4 style="font-weight:600">My Profile</h4>
                                     </div>
                                 </div>
                                 <div class="row mb-5 ">
@@ -211,8 +211,8 @@
                 <div class="tab-pane fade" id="chat-tab-pane" role="tabpanel" aria-labelledby="test-tab" tabindex="0">
                     <div class="row">
                         <div class="col-12">
-                            <div class="chated">
-                                <h2 class="mb-4">Chats</h2>
+                            <div class="chated mt-3">
+                                <h4 style="font-weight:600">Chats</h4>
                                 <!-- serach -->
                                 <div class="d-flex border chatSearch">
                                     <i class="fa-solid fa-magnifying-glass chatSearchIcon"></i>
@@ -339,30 +339,30 @@
                             </div>
 
                             <div class="chatItem" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight">
-                            <div class="d-flex gap-2">
-                                <div class="chatItemContent">
-                                    <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
+                                aria-controls="offcanvasRight">
+                                <div class="d-flex gap-2">
+                                    <div class="chatItemContent">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" alt="">
 
-                                    <div class="activeIconChatItem">
-                                        <img src="assets/images/active-removebg-preview.png" alt="" />
+                                        <div class="activeIconChatItem">
+                                            <img src="assets/images/active-removebg-preview.png" alt="" />
+                                        </div>
                                     </div>
+
+                                    <!-- chat Item Text -->
+                                    <div class="d-flex flex-column">
+                                        <div class="chatItemName">
+                                            <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
+                                            <p class="">okay sure</p>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                                <!-- chat Item Text -->
-                                <div class="d-flex flex-column">
-                                    <div class="chatItemName">
-                                        <h5 class="m-0 p-0">Khan Kamrul Islam</h5>
-                                        <p class="">okay sure</p>
-                                    </div>
+                                <div class="lastTextTime">
+                                    02:55
                                 </div>
-
                             </div>
-
-                            <div class="lastTextTime">
-                                02:55
-                            </div>
-                        </div>
                         </div>
 
                         <div class="chattingPerson">
@@ -582,7 +582,8 @@
                         <div class="col-12">
                             <div class="container">
                                 <div class="d-flex justify-content-between">
-                                    <h3>Groups</h3>
+                                    <h4 style="font-weight:600">Groups</h4>
+                                    
                                     <!-- Button trigger modal -->
                                     <button type="button" class="Groups_btn" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal">
@@ -640,15 +641,15 @@
                                                                                     </li>
 
                                                                                     <li>
-                                                                                                                                    <div class="mb-3 form-check">
-                                                                                                                                        <input type="checkbox"
-                                                                                                                                            class="form-check-input"
-                                                                                                                                            id="exampleCheck1">
-                                                                                                                                        <label
-                                                                                                                                            class="form-check-label"
-                                                                                                                                            for="exampleCheck1">Askay
-                                                                                                                                            Kumar</label>
-                                                                                                                                    </div>
+                                                                                        <div class="mb-3 form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="exampleCheck1">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="exampleCheck1">Askay
+                                                                                                Kumar</label>
+                                                                                        </div>
                                                                                     </li>
 
                                                                                     <li>
@@ -977,7 +978,7 @@
                         <div class="col-12">
                             <div class="container">
                                 <div class="d-flex justify-content-between">
-                                    <h3>Contacts</h3>
+                                    <h4 style="font-weight:600">Contacts</h4>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="Groups_btn" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal2">
@@ -1171,7 +1172,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12 mt-3 my-5">
-                                        <h3>Settings</h3>
+                                        <h4 style="font-weight:600">Settings</h4>
                                     </div>
                                 </div>
                                 <div class="row mb-5 ">
@@ -1351,37 +1352,43 @@
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active position-relative" id="v-pills-home" role="tabpanel"
                         aria-labelledby="v-pills-home-tab" tabindex="0">
-                        <div class="chatItemDesktopHeader border-bottom position-sticky top-0 start-0 w-100 bg-white">
-                            <div class="header d-flex justify-content-between p-3">
+                        <div class="chatItemDesktopHeader position-sticky top-0 start-0 w-100 bg-white">
+                            <div class="header d-flex justify-content-between align-items-center p-1 me-2">
                                 <!-- Left Side -->
-                                <div class="d-flex gap-2">
+                                <div class="d-flex gap-2 align-items-center">
                                     <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" alt="">
-                                    <div class="d-flex flex-column">
-                                        <h5>Khan Kamrul Islam</h5>
-                                        <p>online</p>
+                                    <div class="d-flex flex-column" style="margin-top:
+                                    -5px">
+                                        <h6 style="font-weight:800">Khan Kamrul Islam</h6>
+                                        <span>online</span>
                                     </div>
                                 </div>
                                 <!-- Right Side -->
-                                <div class="d-flex gap-4 mt-2">
-                                    <span class="searchBoxs" data-bs-toggle="modal" data-bs-target="#searchIcon"><i class="fa-solid fa-magnifying-glass chatSearchIcon"></i></span>
+                                <div class="d-flex gap-4 align-items-center">
+                                    <span class="searchBoxs" data-bs-toggle="modal" data-bs-target="#searchIcon"><i
+                                            class="fa-solid fa-magnifying-glass chatSearchIcon"></i></span>
                                     <!-- Phone Call Icon -->
-                                    <span data-bs-toggle="modal" data-bs-target="#phoneIcon"><i class="fa-solid fa-phone chatSearchIcon"></i></span>
-                                    <span data-bs-toggle="modal" data-bs-target="#videoIcon"><i class="fa-solid fa-video chatSearchIcon"></i></span>
+                                    <span data-bs-toggle="modal" data-bs-target="#phoneIcon"><i
+                                            class="fa-solid fa-phone chatSearchIcon"></i></span>
+                                    <span data-bs-toggle="modal" data-bs-target="#videoIcon"><i
+                                            class="fa-solid fa-video chatSearchIcon"></i></span>
                                 </div>
                             </div>
                         </div>
                         <!-- Search Modal -->
-                        <div class="fade modal" id="searchIcon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="fade modal" id="searchIcon" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body searchModal">
-                                        <input class="w-100 p-2" type="text" placeholder="Search please " >
+                                        <input class="w-100 p-2" type="text" placeholder="Search please ">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Call Modal  -->
-                        <div class="fade modal" id="phoneIcon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="fade modal" id="phoneIcon" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-body phoneModal">
@@ -1391,7 +1398,8 @@
                                             <p>Start Audio Call</p>
                                         </div>
                                         <div class="Icon">
-                                            <span class="close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></span>
+                                            <span class="close" data-bs-dismiss="modal"><i
+                                                    class="fa-solid fa-xmark"></i></span>
                                             <span class="call"><i class="fa-solid fa-phone-volume"></i></span>
                                         </div>
                                     </div>
@@ -1399,8 +1407,9 @@
                             </div>
                         </div>
                         <!-- Call Modal close -->
-                         <!-- Video Call Modal  -->
-                         <div class="fade modal" id="videoIcon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <!-- Video Call Modal  -->
+                        <div class="fade modal" id="videoIcon" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-body phoneModal">
@@ -1410,7 +1419,8 @@
                                             <p>Start Audio Call</p>
                                         </div>
                                         <div class="Icon">
-                                            <span class="close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></span>
+                                            <span class="close" data-bs-dismiss="modal"><i
+                                                    class="fa-solid fa-xmark"></i></span>
                                             <span class="call"><i class="fa-solid fa-video"></i></span>
                                         </div>
                                     </div>
@@ -1420,127 +1430,160 @@
                         <!-- Video Modal close -->
                         <!-- Message Item Body -->
                         <div class="offcanvas-body">
-                            <div class="row mb-4">
-                                <div class="col-12">
-                                    <div class="d-flex textPerson">
+                            <div class="row my-3">
+
+                                <!-- Person 1 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
                                         <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                                        <div class="chatType">
-                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
-                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                                Morning Good Morning Good Morning</p>
+                                        <div class="chatType p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Quaerat mollitia voluptatem, adipisci vero modi debitis.</p>
                                         </div>
                                     </div>
                                 </div>
-                                
 
-                                <div class="col-12">
-                                    <div class="d-flex textPerson">
+                                <!-- Person 1 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
                                         <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                                        <!-- ChatType Me -->
-                                        <div class="chatType">
-                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
-                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                                Morning Good Morning Good Morning</p>
+                                        <div class="chatType p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                Vero vel illo ab fugiat, ipsam doloremque quos ea exercitationem
+                                                perspiciatis nemo nesciunt nulla mollitia eligendi distinctio, maxime
+                                                consequuntur nisi? Eius, ipsa?</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="d-flex textPerson2">
-                                        <div class="chatType2">
-                                            <p><span>Me - </span> Good Morning</p>
+                                <!-- Person 2 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                                        <div class="chatType2 p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                Vero vel illo ab fugiat, ipsam doloremque quos ea exercitationem
+                                                perspiciatis nemo nesciunt nulla mollitia eligendi distinctio, maxime
+                                                consequuntur nisi? Eius, ipsa?</p>
                                         </div>
                                         <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="d-flex textPerson2">
-                                        <div class="chatType2">
-                                            <p><span>Me - </span> Good Morning</p>
-                                        </div>
-                                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex textPerson2">
-                                        <div class="chatType2">
-                                            <p><span>Me - </span> Good Morning</p>
+                                <!-- Person 2 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                                        <div class="chatType2 p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                Vero vel illo ab fugiat.</p>
                                         </div>
                                         <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="d-flex textPerson">
+                                <!-- Person 2 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                                        <div class="chatType2 p-3 rounded-4 text-start">
+                                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="rounded-1"
+                                                alt="">
+                                        </div>
+                                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- Person 1 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
                                         <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                                        <div class="chatType">
-                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
-                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                                Morning Good Morning Good Morning</p>
+                                        <div class="chatType p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Ea, quia! Optio dignissimos necessitatibus odit neque. Totam excepturi
+                                                ab suscipit cumque.</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="d-flex textPerson2">
-                                        <div class="chatType2">
-                                            <p><span>Me - </span> Good Morning</p>
-                                        </div>
-                                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="d-flex textPerson2">
-                                        <div class="chatType2">
-                                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg"
-                                                class="chatTypeImg" alt="">
+                                <!-- Person 2 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                                        <div class="chatType2 p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Sit, hic.</p>
                                         </div>
                                         <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="d-flex textPerson">
+                                <!-- Person 1 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
                                         <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                                        <div class="chatType">
-                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
-                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                                Morning Good Morning Good Morning</p>
+                                        <div class="chatType p-3 rounded-4 text-start">
+                                            <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="rounded-1"
+                                                alt="">
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="d-flex textPerson">
+                                <!-- Person 1 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
                                         <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                                        <div class="chatType">
-                                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning
-                                                Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                                Morning Good Morning Good Morning</p>
+                                        <div class="chatType p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Delectus eos molestias quia, neque iure adipisci? Odit in aliquam nihil
+                                                provident nam, minima quis sint incidunt! Officiis ducimus error, dolore
+                                                modi quis ab itaque cupiditate, est veritatis nesciunt libero placeat
+                                                eligendi a expedita excepturi! Dignissimos, saepe illum eaque veniam
+                                                vitae assumenda.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="d-flex textPerson2">
-                                        <div class="chatType2">
-                                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg"
-                                                class="chatTypeImg" alt="">
+
+                                <!-- Person 2 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                                        <div class="chatType2 p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Ducimus aspernatur eaque consequatur doloribus magni error pariatur
+                                                neque! Explicabo maiores asperiores in consequatur! Et, dolor sed!</p>
                                         </div>
                                         <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
                                     </div>
                                 </div>
+
+                                <!-- Person 2 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                                        <div class="chatType2 p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                Quaerat, nemo.</p>
+                                        </div>
+                                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- Person 1 -->
+                                <div class="col-12 col-md-12">
+                                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
+                                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                                        <div class="chatType p-3 rounded-4 text-start">
+                                            <p class="m-0 p-0">Lorem ipsum dolor sit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <!-- Message footer Item -->
                         <!-- OffCanvas Footer -->
-                        <div class="position-sticky bottom-0 start-0 w-100 bg-white p-3 border-top  destopFooter">
+                        <div class="position-sticky bottom-0 start-0 w-100 bg-white p-2 destopFooter">
                             <div class="">
-                                <form action="" mathod="" class=" d-flex justify-content-between align-items-center"  id="">
-                                    
-                                    <input type="text" id="iconInput" placeholder="Enter Messge" >
-                                    
+                                <form action="" mathod="" class=" d-flex justify-content-between align-items-center"
+                                    id="">
+
+                                    <input type="text" id="iconInput" placeholder="Enter Messge">
+
                                     <!-- <div class="item" >
                                         <input type="text" placeholder="Enter Messge" id="iconInput">
                                     </div> -->
@@ -1548,9 +1591,10 @@
                                         <i class="fa-solid fa-camera"></i>
                                     </div>
                                     <div class="item">
-                                        <input type="file" id="actual-btn" hidden/>
-                                        <label for="actual-btn" class="imagePicBtn"><i class="fa-solid fa-paperclip"></i></label>
-                                       
+                                        <input type="file" id="actual-btn" hidden />
+                                        <label for="actual-btn" class="imagePicBtn"><i
+                                                class="fa-solid fa-paperclip"></i></label>
+
                                     </div>
                                     <div class="item">
                                         <i class="fa-solid fa-microphone-slash"></i>
@@ -1560,7 +1604,7 @@
                                     </div>
                                 </form>
                                 <!--  -->
-                                
+
                             </div>
                         </div>
 
@@ -1604,14 +1648,16 @@
             </div>
 
             <div class="d-flex">
-                <button type="button"  class="searchOffCanvas" data-bs-toggle="modal" data-bs-target="#searchIcons"> <i class="fa-solid fa-magnifying-glass"></i></button>
-                 
+                <button type="button" class="searchOffCanvas" data-bs-toggle="modal" data-bs-target="#searchIcons"> <i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+
                 <!-- Search Modal Mobile-->
-                 <div class="modal" id="searchIcons" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal" id="searchIcons" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-body searchModal">
-                                <input class="w-100 p-2" type="text" placeholder="Search please " >
+                                <input class="w-100 p-2" type="text" placeholder="Search please ">
                             </div>
                         </div>
                     </div>
@@ -1641,165 +1687,196 @@
 
         <div class="offcanvas-body">
             <div class="row my-5">
-                <div class="col-12">
-                    <div class="d-flex textPerson">
+                <!-- Person 1 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
                         <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                        <div class="chatType">
-                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
-                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                Morning</p>
+                        <div class="chatType p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quaerat mollitia voluptatem, adipisci vero modi debitis.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <div class="d-flex textPerson">
+                <!-- Person 1 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
                         <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                        <!-- ChatType Me -->
-                        <div class="chatType">
-                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
-                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                Morning</p>
+                        <div class="chatType p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Vero vel illo ab fugiat, ipsam doloremque quos ea exercitationem
+                                perspiciatis nemo nesciunt nulla mollitia eligendi distinctio, maxime
+                                consequuntur nisi? Eius, ipsa?</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <div class="d-flex textPerson">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                        <!-- ChatType Me -->
-                        <div class="chatType">
-                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
-                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                Morning</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="d-flex textPerson">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                        <!-- ChatType Me -->
-                        <div class="chatType">
-                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
-                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                Morning</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="d-flex textPerson">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                        <!-- ChatType Me -->
-                        <div class="chatType">
-                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
-                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                Morning</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="d-flex textPerson">
-                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                        <!-- ChatType Me -->
-                        <div class="chatType">
-                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
-                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                Morning</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="d-flex textPerson2">
-                        <div class="chatType2">
-                            <p><span>Me - </span> Good Morning</p>
+                <!-- Person 2 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                        <div class="chatType2 p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Vero vel illo ab fugiat, ipsam doloremque quos ea exercitationem
+                                perspiciatis nemo nesciunt nulla mollitia eligendi distinctio, maxime
+                                consequuntur nisi? Eius, ipsa?</p>
                         </div>
                         <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <div class="d-flex textPerson">
+                <!-- Person 2 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                        <div class="chatType2 p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Vero vel illo ab fugiat.</p>
+                        </div>
+                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                    </div>
+                </div>
+
+                <!-- Person 2 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                        <div class="chatType2 p-3 rounded-4 text-start">
+                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="rounded-1" alt="">
+                        </div>
+                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                    </div>
+                </div>
+
+                <!-- Person 1 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
                         <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
-                        <div class="chatType">
-                            <p><span>Tarek - </span> Good Morning Good Morning Good Morning Good Morning Good Morning
-                                Good Morning Good Morning Good Morning Good Morning Good Morning Good Morning Good
-                                Morning</p>
+                        <div class="chatType p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ea, quia! Optio dignissimos necessitatibus odit neque. Totam excepturi
+                                ab suscipit cumque.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <div class="d-flex textPerson2">
-                        <div class="chatType2">
-                            <p><span>Me - </span> Good Morning</p>
+                <!-- Person 2 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                        <div class="chatType2 p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sit, hic.</p>
                         </div>
                         <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <div class="d-flex textPerson2">
-                        <div class="chatType2">
-                            <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="chatTypeImg" alt="">
+                <!-- Person 1 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
+                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                        <div class="chatType p-3 rounded-4 text-start">
+                            <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="rounded-1" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Person 1 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
+                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                        <div class="chatType p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Delectus eos molestias quia, neque iure adipisci? Odit in aliquam nihil
+                                provident nam, minima quis sint incidunt! Officiis ducimus error, dolore
+                                modi quis ab itaque cupiditate, est veritatis nesciunt libero placeat
+                                eligendi a expedita excepturi! Dignissimos, saepe illum eaque veniam
+                                vitae assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Person 2 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                        <div class="chatType2 p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus aspernatur eaque consequatur doloribus magni error pariatur
+                                neque! Explicabo maiores asperiores in consequatur! Et, dolor sed!</p>
                         </div>
                         <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
                     </div>
                 </div>
+
+                <!-- Person 2 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson2 d-flex justify-content-end align-items-end w-75">
+                        <div class="chatType2 p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quaerat, nemo.</p>
+                        </div>
+                        <img src="assets/images/avatar-1.3921191a8acf79d3e907.jpg" class="" alt="">
+                    </div>
+                </div>
+
+                <!-- Person 1 -->
+                <div class="col-12 col-md-12">
+                    <div class="textPerson d-flex justify-content-start align-items-end w-75">
+                        <img src="assets/images/avatar-2.feb0f89de58f0ef9b424.jpg" class="" alt="">
+                        <div class="chatType p-3 rounded-4 text-start">
+                            <p class="m-0 p-0">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- OffCanvas Footer -->
         <div class="row m-0 p-0">
             <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 offcanvas-footer ">
                 <form action="" method="" enctype="" class="w-100 mx-auto d-flex flex-row justify-content-between">
-                        <div class="item">
-                            <i class="fa-solid fa-camera"></i>
-                        </div>
-                        <div class="item">
-                            <input type="file" id="actual-btn" hidden/>
-                            <label for="actual-btn" class="imagePicBtn"><i class="fa-solid fa-paperclip"></i></label>
-                        
-                        </div>
-                        <div class="item">
-                            <i class="fa-solid fa-microphone-slash"></i>
-                        </div>
-                   
-                        <input type="text" class="form-control" id="iconInput" placeholder="message">   
-                        <div class="sendItemmobile">
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </div>         
+                    <div class="item">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <div class="item">
+                        <input type="file" id="actual-btn" hidden />
+                        <label for="actual-btn" class="imagePicBtn"><i class="fa-solid fa-paperclip"></i></label>
+
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-microphone-slash"></i>
+                    </div>
+
+                    <input type="text" class="form-control" id="iconInput" placeholder="message">
+                    <div class="sendItemmobile">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-    
 
-    <script src="script/jquery-3.6.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="script/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.js"></script>
-    <script src="/script/owl.carousel.js"></script>
+    <script src="script/owl.carousel.js"></script>
     <script src="script/bootstrap/bootstrap.js"></script>
     <script>
         $("#iconInput").emojioneArea()
     </script>
     <script>
-       $(document).ready(function(){
-        // Show hide popover
-        $(".dropdown").click(function(){
-            $(this).find(".dropdown-menu").slideToggle("fast");
+        $(document).ready(function () {
+            // Show hide popover
+            $(".dropdown").click(function () {
+                $(this).find(".dropdown-menu").slideToggle("fast");
+            });
         });
-    });
-    $(document).on("click", function(event){
-        var $trigger = $(".dropdown");
-        if($trigger !== event.target && !$trigger.has(event.target).length){
-            $(".dropdown-menu").slideUp("fast");
-        }            
-    });
+        $(document).on("click", function (event) {
+            var $trigger = $(".dropdown");
+            if ($trigger !== event.target && !$trigger.has(event.target).length) {
+                $(".dropdown-menu").slideUp("fast");
+            }
+        });
     </script>
 </body>
 

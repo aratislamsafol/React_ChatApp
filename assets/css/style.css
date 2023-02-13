@@ -1,35 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* DropDown */
-ul{
+ul {
   padding: 0;
   list-style: none;
   background: #f2f2f2;
   margin-bottom: 0;
 }
-ul li{
+
+ul li {
   display: inline-block;
   position: relative;
   line-height: 21px;
   text-align: left;
 }
-ul li a{
+
+ul li a {
   display: block;
   padding: 7px 28px;
   color: #333;
   text-decoration: none;
 }
-ul li ul.dropdown-menu{
-  min-width: 100%; /* Set width of the dropdown */
+
+ul li ul.dropdown-menu {
+  min-width: 100%;
+  /* Set width of the dropdown */
   background: #f2f2f2;
   display: none;
   position: absolute;
   z-index: 999;
   left: -58px;
 }
-ul li ul.dropdown-menu li{
+
+ul li ul.dropdown-menu li {
   display: block;
 }
 
@@ -45,24 +57,27 @@ ul li ul.dropdown-menu li{
   z-index: 1;
   align-items: center;
 }
-.logBtn{
+
+.logBtn {
   border: none;
   outline: none;
-  color:#7269EF !important;
+  color: #7269EF !important;
 }
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   /* border-color: none !important; */
-  border:none;
+  border: none;
   outline: none;
 }
+
 .nav-link {
   padding: 0px;
-  color:#7269EF !important;
+  color: #7269EF !important;
 }
 
-.nav-link.active{
-  color:#646464 !important;
+.nav-link.active {
+  color: #646464 !important;
 }
 
 .nav-link button:hover {
@@ -145,10 +160,9 @@ ul li ul.dropdown-menu li{
 
 .offcanvas-header img,
 .offcanvas-body img {
-  height: 48px;
-  width: 48px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
-  margin-left: 20px;
   border: 1px solid gray;
 }
 
@@ -196,44 +210,31 @@ ul li ul.dropdown-menu li{
 
 .offcanvas-body p {
   font-size: 14px;
-  margin-top: 20px;
-  /* color:rgb(78, 75, 75); */
   font-weight: 500;
-  float: left;
 }
 
 .textPerson {
-  text-align: center;
   gap: 10px;
-  display: flex;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  float: left;
 }
 
 .chatType {
   background-color: #7269EF;
   color: white;
-  padding: 0;
-  border-radius: 8px;
-  overflow: scroll !important;
   overflow: visible !important;
 }
 
 .textPerson2 {
-  text-align: center;
-  gap: 4px;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
+  gap: 10px;
+  margin-bottom: 10px;
+  float: right;
 }
 
 .chatType2 {
   background-color: gray;
   color: rgb(255, 253, 253);
-  padding: 0px 10px;
-  border-radius: 8px;
-  overflow: scroll !important;
   overflow: visible !important;
-  justify-content: end;
 }
 
 /* offCanvas Footer */
@@ -249,16 +250,18 @@ ul li ul.dropdown-menu li{
   padding: 0px 25px;
   margin-left: 8px;
 }
-.offcanvas-footer input{
+
+.offcanvas-footer input {
   outline: none;
   border: none;
-  width:60% !important;
-  border:none;
-  border:1px solid rgb(190, 188, 188);
+  width: 60% !important;
+  border: none;
+  border: 1px solid rgb(190, 188, 188);
   border-radius: 20px;
   outline: none;
 }
-.sendItemmobile{
+
+.sendItemmobile {
   background-color: #7269EF;
   font-size: 12px;
   padding: 10px 12px;
@@ -266,15 +269,18 @@ ul li ul.dropdown-menu li{
   border-radius: 8px;
   cursor: pointer;
 }
-.offcanvas-footer .item{
+
+.offcanvas-footer .item {
   color: #7269EF;
-  margin-top:4px;
+  margin-top: 4px;
 }
+
 .modal-backdrop {
   z-index: 3;
   width: 100vw;
   height: 100vh;
 }
+
 /* Emoji */
 .emojionearea {
   width: 75%;
@@ -282,42 +288,54 @@ ul li ul.dropdown-menu li{
   background-color: #d8d8d8;
   border-radius: 8px;
 }
-.emojionearea .emojionearea-button > div {
+
+.emojionearea .emojionearea-button>div {
   top: 3px;
 }
-.emojionearea.emojionearea-inline > .emojionearea-editor {
+
+.emojionearea.emojionearea-inline>.emojionearea-editor {
   width: 92%;
   font-size: 18px;
 }
-.emojionearea-editor{
+
+.emojionearea-editor {
   padding: 33px;
   width: 75%;
 }
+
 .emojionearea.focused {
   border-color: #d8d8d8 !important;
   /* outline: 0; */
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgba(184, 241, 255, 0.6);
   /* box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%); */
 }
-.sendItemDesktop{
+
+.sendItemDesktop {
   background-color: #7269EF;
   font-size: 20px;
-  padding:10px 15px;
-  color:white;
+  padding: 10px 15px;
+  color: white;
   border-radius: 8px;
   cursor: pointer;
 }
 
-.destopFooter .item{
+.destopFooter {
+  border-top: 1px solid #c7c7c7;
+}
+
+.destopFooter .item {
   color: #7269EF;
 }
-.destopFooter .focused{
+
+.destopFooter .focused {
   border-color: none !important;
 }
-.destopFooter .sendItemDesktop{
-  color:rgb(238, 232, 232) !important;
+
+.destopFooter .sendItemDesktop {
+  color: rgb(238, 232, 232) !important;
 }
-.imagePicBtn{
+
+.imagePicBtn {
   color: #7269EF;
   padding: 1px;
   font-family: sans-serif;
@@ -325,6 +343,7 @@ ul li ul.dropdown-menu li{
   cursor: pointer;
   margin-top: 1px;
 }
+
 /* Emoji on Desktop */
 
 /* .emojionearea{
@@ -386,6 +405,7 @@ ul li ul.dropdown-menu li{
   font-size: 18px;
   font-weight: 600;
   color: var(--fontAccrodion);
+  color:rgb(58, 58, 58)
 }
 
 .accrodion-item .icon {
@@ -435,6 +455,7 @@ ul li ul.dropdown-menu li{
   max-height: 0;
   transition: opacity 100ms linear, max-height 100ms linear;
   z-index: -1;
+  color:rgb(58, 58, 58);
 }
 
 .accrodion-content h6 {
@@ -468,8 +489,8 @@ ul li ul.dropdown-menu li{
 
 .attachedFile span {
   font-weight: 600;
-  color: var(--fontAccrodion);
   letter-spacing: 1px;
+  color:rgb(58, 58, 58)
 }
 
 /* DropDown Button */
@@ -484,7 +505,7 @@ ul li ul.dropdown-menu li{
   border: none;
   cursor: pointer;
   margin-top: -6px;
-} 
+}
 
 /* Chats */
 .chated h2 {
@@ -499,10 +520,10 @@ ul li ul.dropdown-menu li{
 }
 
 .chatSearchIcon {
-  font-size: 20px;
-  color: var(--fontAccrodion);
-  margin-top: 6px;
+  font-size: 18px;
+  margin-top: 5px;
   cursor: pointer;
+  color:rgb(54, 54, 54)
 }
 
 .chatSearch input {
@@ -630,47 +651,54 @@ ul li ul.dropdown-menu li{
 
 /* Desktop Chat Item */
 .chatItemDesktopHeader {
-  border-bottom: 1px solid rgb(238, 231, 231) !important;
+  border-bottom: 1px solid #c7c7c7 !important;
 }
 
 .chatItemDesktopHeader .header {
   line-height: 2px;
 }
 
-.chatItemDesktopHeader .header p {
-  margin-top: 6px !important;
+.chatItemDesktopHeader .header span {
+  margin-top: 0px !important;
+  font-size: 14px;
 }
 
 .chatItemDesktopHeader img {
-  width: 57px;
+  width: 50px;
   height: fit-content;
   border-radius: 50%;
 }
-.chatItemDesktopHeader .header span{
-  color:#4a4a4a;
+
+.chatItemDesktopHeader .header span {
+  color: #4a4a4a;
 }
-.phoneModal,.searchModal{
+
+.phoneModal,
+.searchModal {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.phoneModal img{
+
+.phoneModal img {
   border-radius: 50%;
   width: 23%;
   height: auto;
 }
-.phoneModalContent{
-  margin-top:15px;
+
+.phoneModalContent {
+  margin-top: 15px;
   text-align: center;
 }
-.phoneModal .Icon{
+
+.phoneModal .Icon {
   display: flex;
   flex-direction: row;
-  gap:10px;
+  gap: 10px;
 }
 
-.phoneModal .close i{
+.phoneModal .close i {
   background-color: #CB3C5E !important;
   padding: 16px;
   border-radius: 53%;
@@ -679,30 +707,33 @@ ul li ul.dropdown-menu li{
 
 }
 
-.phoneModal .call i{
+.phoneModal .call i {
   background-color: #05B688 !important;
   padding: 17px;
   border-radius: 36px;
   font-size: 25px;
   color: whitesmoke;
 }
-.searchModal input{
+
+.searchModal input {
   border-radius: 6px;
-  border:none;
+  border: none;
   outline: none;
   background-color: #e2e2e2;
 }
+
 /* #phoneIcon .modal-dialog{
   margin: 60px;
 } */
 
 /* Group Content */
-.Groups_btn{
+.Groups_btn {
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 22px;
 }
+
 .group_contact h3 {
   border-radius: 21px;
   padding: 4px 10px;
